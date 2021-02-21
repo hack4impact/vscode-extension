@@ -1,6 +1,7 @@
 {
   "name": "h4i-extension-pack",
-  "displayName": "Hack4Impact's Recommended Extensions for Quality Project Development",
+  "displayName": "Hack4Impact Recommended Extensions",
+  "description": "Hack4Impact's Recommended Extensions for Quality Project Development",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.53.0"
