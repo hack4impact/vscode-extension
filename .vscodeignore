@@ -1,4 +1,6 @@
+node_modules/
 .vscode/**
 .vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
+.github/**
+.husky/**
+.*
