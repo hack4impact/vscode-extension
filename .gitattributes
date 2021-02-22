@@ -1,1 +1,12 @@
-* text=auto
+.prettierrc linguist-language=JSON
+
+.lintstagedrc linguist-language=JSON
+
+.markdownlintrc linguist-language=JSON
+.markdownlintignore linguist-language=Ignore-List
+
+.imgbotconfig linguist-language=JSON
+
+.snyk linguist-language=YAML
+
+.vscodeignore linguist-language=Ignore-List

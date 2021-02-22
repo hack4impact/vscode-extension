@@ -3,6 +3,11 @@
   "displayName": "Hack4Impact Recommended Extensions",
   "description": "Hack4Impact's Recommended Extensions for Quality Project Development",
   "version": "0.0.1",
+  "scripts": {
+    "postinstall": "husky install",
+    "lint": "npx lint-check",
+    "lint:staged": "lint-staged"
+  },
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -16,5 +21,12 @@
     "dbaeumer.vscode-eslint",
     "DavidAnson.vscode-markdownlint",
     "eamodio.gitlens"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "markdownlint": "^0.23.1",
+    "pinst": "^2.1.4",
+    "prettier": "^2.2.1"
+  }
 }
