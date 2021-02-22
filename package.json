@@ -34,17 +34,24 @@
   "scripts": {
     "postinstall": "husky install",
     "lint": "npx lint-check",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-typescript": "^7.12.17",
+    "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.20.0",
     "husky": "^5.0.9",
+    "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
     "markdownlint": "^0.23.1",
     "pinst": "^2.1.4",
     "prettier": "^2.2.1",
+    "ts-jest": "^26.5.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5"
   }

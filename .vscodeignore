@@ -1,6 +1,8 @@
-node_modules/
-.vscode/**
-.vscode-test/**
-.github/**
-.husky/**
-.*
+*
+*/**
+!package.json
+!README.md
+!CHANGELOG.md
+!LICENSE.md
+!AUTHORS
+!static/hack4impact-icon.png
