@@ -1,5 +1,6 @@
 import pkg from "../package.json";
 import { valid, validRange } from "semver";
+import { checkArray, checkIfObjectLiteral, checkObject } from "./helpers";
 
 test("Correct name", () => {
   expect(pkg.name).toBe("h4i-extension-pack");
@@ -34,50 +35,40 @@ test("Correct license", () => {
 describe("Correct author", () => {
   const author = pkg.author;
 
-  expect(Object.keys(author).length).toEqual(2);
-
-  test("name", () => {
-    expect(author.name).toBe("Hack4Impact");
-  });
-
-  test("url", () => {
-    expect(author.url).toBe("https://hack4impact.org/");
-  });
+  checkObject(
+    {
+      name: "Hack4Impact",
+      url: "https://hack4impact.org/",
+    },
+    author
+  );
 });
 
 describe("Correct repository", () => {
   const repo = pkg.repository;
 
-  expect(Object.keys(repo).length).toEqual(2);
-
-  test("type", () => {
-    expect(repo.type).toBe("git");
-  });
-
-  test("url", () => {
-    expect(repo.url).toBe("https://github.com/hack4impact/h4i-extension-pack");
-  });
+  checkObject(
+    {
+      type: "git",
+      url: "https://github.com/hack4impact/h4i-extension-pack",
+    },
+    repo
+  );
 });
 
 test("Correct categories", () => {
   const categories = pkg.categories;
 
-  expect(categories.length).toBe(3);
-  expect(categories).toContain("Extension Packs");
-  expect(categories).toContain("Linters");
-  expect(categories).toContain("Formatters");
+  checkArray(["Extension Packs", "Linters", "Formatters"], categories);
 });
 
 describe("Correct bugs", () => {
   const bugs = pkg.bugs;
 
-  expect(Object.keys(bugs).length).toEqual(1);
-
-  test("url", () => {
-    expect(bugs.url).toEqual(
-      "https://github.com/hack4impact/h4i-extension-pack/issues"
-    );
-  });
+  checkObject(
+    { url: "https://github.com/hack4impact/h4i-extension-pack/issues" },
+    bugs
+  );
 });
 
 describe("Correct engines", () => {
@@ -93,23 +84,27 @@ describe("Correct engines", () => {
 test("Correct extension pack", () => {
   const extensions = pkg.extensionPack;
 
-  expect(extensions.length).toBe(4);
-  expect(extensions).toContain("esbenp.prettier-vscode");
-  expect(extensions).toContain("dbaeumer.vscode-eslint");
-  expect(extensions).toContain("DavidAnson.vscode-markdownlint");
-  expect(extensions).toContain("eamodio.gitlens");
+  checkArray(
+    [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "DavidAnson.vscode-markdownlint",
+      "eamodio.gitlens",
+    ],
+    extensions
+  );
 });
 
 test("Contains scripts", () => {
   const scripts = pkg.scripts;
 
-  expect(!!scripts && scripts.constructor === Object).toBe(true);
+  checkIfObjectLiteral(scripts);
 });
 
 test("Contains dev dependencies", () => {
   const devDeps = pkg.devDependencies;
 
-  expect(!!devDeps && devDeps.constructor === Object).toBe(true);
+  checkIfObjectLiteral(devDeps);
 });
 
 test("Contains no dependencies", () => {
