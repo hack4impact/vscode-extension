@@ -1,15 +1,12 @@
-name: Node CI
+name: Extension Deploy
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  release:
+    types:
+      - created
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -18,7 +15,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2.1.4
         with:
-          node-version: 15.x
+          node-version: 15
 
       - name: Install Dependencies
         run: npm ci
@@ -29,5 +26,7 @@ jobs:
       - name: Test Project
         run: npm test
 
-      - name: Build Project
-        run: npm run build
+      - name: Deploy Extension
+        run: npm run deploy
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}

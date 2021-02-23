@@ -7,7 +7,6 @@ on:
 jobs:
   stale:
     runs-on: ubuntu-latest
-
     steps:
       - name: Mark stale issues and PRs
         uses: actions/stale@v3

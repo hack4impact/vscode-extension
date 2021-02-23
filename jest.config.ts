@@ -187,7 +187,7 @@ export default {
   verbose: true,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
-  // watchPathIgnorePatterns: [],
+  watchPathIgnorePatterns: ["tests/vsce.test.ts"],
 
   // Whether to use watchman for file crawling
   // watchman: true,
