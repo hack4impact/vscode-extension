@@ -12,7 +12,6 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "@typescript-eslint/naming-convention": "error",
     "@typescript-eslint/semi": "error",
     "@typescript-eslint/no-explicit-any": "off",
     "indent": "off",

@@ -33,13 +33,18 @@
     "eamodio.gitlens"
   ],
   "activationEvents": [
-    "onCommand:placeholder.helloWorld"
+    "onCommand:hack4impact.createESLintConfigFile",
+    "onCommand:hack4impact.createPrettierConfigFile"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "placeholder.helloWorld",
-        "title": "Hello World"
+        "command": "hack4impact.createESLintConfigFile",
+        "title": "Hack4Impact: Create ESLint Configuration File"
+      },
+      {
+        "command": "hack4impact.createPrettierConfigFile",
+        "title": "Hack4Impact: Create Prettier Configuration File"
       }
     ]
   },
@@ -70,6 +75,7 @@
     "@types/dotenv-safe": "^8.1.1",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
+    "@types/prettier": "^2.2.1",
     "@types/semver": "^7.3.4",
     "@types/vscode": "^1.53.0",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
