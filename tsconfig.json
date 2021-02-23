@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "target": "ES5",
-    "lib": ["ES6", "DOM", "ES2016", "ES2017", "ESNext"],
+    "target": "ES6",
+    "rootDir": "src",
+    "outDir": "out",
+    "lib": ["ES6"],
     "sourceMap": true,
-    "declaration": true,
+    "declaration": false,
     "allowJs": false,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
@@ -15,5 +17,6 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
-  }
+  },
+  "include": ["src"]
 }
