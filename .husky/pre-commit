@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+export INSIDE_HUSKY=true
+
+npm run create-package-json
+git add package.json
 npm run lint:staged

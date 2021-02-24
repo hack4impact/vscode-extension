@@ -65,7 +65,8 @@
     "start": "webpack --mode development --watch",
     "build": "npm run compile && vsce package",
     "postinstall": "husky install",
-    "recreate-releases": "ts-node scripts/recreate-releases.ts"
+    "recreate-releases": "ts-node scripts/recreate-releases.ts",
+    "create-package-json": "ts-node scripts/create-package-json.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
@@ -74,6 +75,7 @@
     "@octokit/rest": "^18.2.0",
     "@types/dotenv-safe": "^8.1.1",
     "@types/jest": "^26.0.20",
+    "@types/mock-require": "^2.0.0",
     "@types/node": "^14.14.31",
     "@types/prettier": "^2.2.1",
     "@types/semver": "^7.3.4",
@@ -87,8 +89,10 @@
     "jest-environment-node": "^26.6.2",
     "lint-staged": "^10.5.4",
     "markdownlint-cli": "^0.26.0",
+    "mock-require": "^3.0.3",
     "pinst": "^2.1.4",
     "prettier": "^2.2.1",
+    "prettier-plugin-sh": "^0.6.0",
     "semver": "^7.3.4",
     "ts-jest": "^26.5.1",
     "ts-loader": "^8.0.17",
