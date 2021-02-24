@@ -1,4 +1,4 @@
-import { ConfigCreator } from "./helpers";
+import { ConfigCreator } from "../helpers";
 
 const config = `# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
 
@@ -13,4 +13,9 @@ indent_style = space
 indent_size = 2
 `;
 
-export default new ConfigCreator("EditorConfig", config, ".editorconfig");
+export default new ConfigCreator(
+  "EditorConfig",
+  config,
+  ".editorconfig",
+  "https://editorconfig.org/"
+);

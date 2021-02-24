@@ -1,6 +1,6 @@
-import ESLint from "./eslint";
-import Prettier from "./prettier";
-import EditorConfig from "./editorconfig";
-import MarkdownLint from "./markdownlint";
+import ESLint from "./creators/eslint";
+import Prettier from "./creators/prettier";
+import EditorConfig from "./creators/editorconfig";
+import MarkdownLint from "./creators/markdownlint";
 
 export default [ESLint, Prettier, EditorConfig, MarkdownLint];

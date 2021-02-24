@@ -1,4 +1,4 @@
-import { ConfigCreator } from "./helpers";
+import { ConfigCreator } from "../helpers";
 import { Options } from "prettier";
 
 const config: Options = {
@@ -13,4 +13,9 @@ const config: Options = {
   trailingComma: "es5",
 };
 
-export default new ConfigCreator("Prettier", config, ".prettierrc.json");
+export default new ConfigCreator(
+  "Prettier",
+  config,
+  ".prettierrc.json",
+  "https://prettier.io/docs/en/configuration.html"
+);

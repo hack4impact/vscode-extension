@@ -1,27 +1,31 @@
-// Internals
-import { OUTPUT_FOLDER_PATH } from "../__tests__/constants";
-
-const vscodeWindow = {
+export const window = {
   showInformationMessage: jest.fn(),
   showErrorMessage: jest.fn(),
   showWarningMessage: jest.fn(),
-  showOpenDialog: jest.fn().mockReturnValue(
-    Promise.resolve([
-      {
-        fsPath: OUTPUT_FOLDER_PATH,
-      },
-    ])
-  ),
+  showOpenDialog: jest.fn(),
+  showTextDocument: jest.fn(),
 };
 
-const workspace = {};
+export const workspace = {
+  openTextDocument: jest.fn(),
+};
 
-const commands = {};
+export const commands = {};
+
+export const env = {
+  openExternal: jest.fn(),
+};
+
+export const Uri = {
+  parse: jest.fn(),
+};
 
 const vscode = {
-  window: vscodeWindow,
+  window,
   workspace,
   commands,
+  env,
+  Uri,
 };
 
-module.exports = vscode;
+export default vscode;
