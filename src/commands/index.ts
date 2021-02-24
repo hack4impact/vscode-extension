@@ -1,7 +1,8 @@
+import { createCommandName, createCommandTitle } from "./helpers";
 import TemplateCreators from "./template-creators";
 
 export default [...TemplateCreators].map((command) => {
-  command.title = `Hack4Impact: ${command.title}`;
-  command.cmdName = `hack4impact.${command.cmdName}`;
+  command.title = createCommandTitle(command.title);
+  command.cmdName = createCommandName(command.cmdName);
   return command;
 });

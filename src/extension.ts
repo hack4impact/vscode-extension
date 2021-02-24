@@ -3,8 +3,8 @@ import Commands from "./commands";
 
 export function activate(context: ExtensionContext): void {
   Commands.forEach((Command) => {
-    const disposable = commands.registerCommand(Command.cmdName, () =>
-      Command.handler()
+    const disposable = commands.registerCommand(Command.cmdName, (...args) =>
+      Command.handler(...args)
     );
     context.subscriptions.push(disposable);
   });

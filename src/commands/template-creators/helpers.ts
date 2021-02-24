@@ -1,7 +1,11 @@
+// Externals
 import { env, window, Uri, workspace } from "vscode";
 import { join } from "path";
 import { promises } from "fs";
 import { writeFile as writeJSONFile } from "jsonfile";
+
+// Internals
+import { BaseCommand } from "../helpers";
 
 const { writeFile } = promises;
 
@@ -13,7 +17,7 @@ interface TemplateCreatorParams {
   isConfig: boolean;
 }
 
-export class TemplateCreator {
+export class TemplateCreator extends BaseCommand {
   static readonly VIEW_FILE = "View Template";
   static readonly VIEW_DOCS = "View Docs";
 
@@ -25,11 +29,10 @@ export class TemplateCreator {
   isConfig: boolean;
 
   // Constructed instance vars
-  title: string;
-  cmdName: string;
   onSuccess: string;
 
   constructor(params: TemplateCreatorParams) {
+    super();
     const { name, templateFileName, template, docsLink, isConfig } = params;
 
     this.name = name;
@@ -45,7 +48,8 @@ export class TemplateCreator {
     } Template!`;
   }
 
-  async handler(): Promise<void> {
+  async handler(...args: any[]): Promise<void> {
+    await super.handler(...args);
     const folderResult = await window.showOpenDialog({
       canSelectFiles: false,
       canSelectFolders: true,
