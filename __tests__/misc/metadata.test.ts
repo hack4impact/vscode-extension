@@ -89,7 +89,7 @@ test("Correct extension pack", () => {
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
       "DavidAnson.vscode-markdownlint",
-      "eamodio.gitlens",
+      "editorconfig.editorconfig",
     ],
     extensions
   );

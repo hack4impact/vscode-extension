@@ -30,7 +30,7 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "DavidAnson.vscode-markdownlint",
-    "eamodio.gitlens"
+    "editorconfig.editorconfig"
   ],
   "activationEvents": [
     "onCommand:hack4impact.createESLintConfigFile",
@@ -38,7 +38,8 @@
     "onCommand:hack4impact.createEditorConfigConfigFile",
     "onCommand:hack4impact.createMarkdownLintConfigFile",
     "onCommand:hack4impact.createGitIgnoreFile",
-    "onCommand:hack4impact.createChangelogFile"
+    "onCommand:hack4impact.createChangelogFile",
+    "onCommand:hack4impact.createLicenseFile"
   ],
   "contributes": {
     "commands": [
@@ -65,6 +66,10 @@
       {
         "command": "hack4impact.createChangelogFile",
         "title": "Hack4Impact: Create Changelog File"
+      },
+      {
+        "command": "hack4impact.createLicenseFile",
+        "title": "Hack4Impact: Create License File"
       }
     ]
   },

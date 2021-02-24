@@ -5,6 +5,7 @@ import MarkdownLint from "./config/markdownlint";
 
 import GitIgnore from "./misc/gitignore";
 import Changelog from "./misc/changelog";
+import License from "./misc/license";
 
 export default [
   ESLint,
@@ -13,4 +14,5 @@ export default [
   MarkdownLint,
   GitIgnore,
   Changelog,
+  License,
 ];
