@@ -1,6 +1,6 @@
 import { TemplateCreator } from "../helpers";
 
-const config = `# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+const template = `# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
 
 root = true
 
@@ -13,10 +13,10 @@ indent_style = space
 indent_size = 2
 `;
 
-export default new TemplateCreator(
-  "EditorConfig",
-  config,
-  ".editorconfig",
-  "https://editorconfig.org/",
-  true
-);
+export default new TemplateCreator({
+  name: "EditorConfig",
+  templateFileName: ".editorconfig",
+  template,
+  docsLink: "https://editorconfig.org/",
+  isConfig: true,
+});

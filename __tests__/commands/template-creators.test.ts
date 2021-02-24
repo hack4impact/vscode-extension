@@ -9,7 +9,7 @@ import { TemplateCreator } from "../../src/commands/template-creators/helpers";
 import { OUTPUT_FOLDER_PATH } from "../constants";
 
 for (const Creator of TemplateCreators)
-  describe(Creator.toolName, () => {
+  describe(Creator.name, () => {
     test("Without folder selected", async () => {
       const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.templateFileName);
 
@@ -53,7 +53,7 @@ for (const Creator of TemplateCreators)
 
       expect(window.showInformationMessage).toHaveBeenCalledTimes(1);
       expect(window.showInformationMessage).toHaveBeenCalledWith(
-        Creator.successMessage,
+        Creator.onSuccess,
         TemplateCreator.VIEW_FILE,
         TemplateCreator.VIEW_DOCS
       );

@@ -5,34 +5,44 @@ import { writeFile as writeJSONFile } from "jsonfile";
 
 const { writeFile } = promises;
 
-export class TemplateCreator {
-  static readonly VIEW_FILE = "View File";
-  static readonly VIEW_DOCS = "View Docs";
-
-  toolName: string;
-  title: string;
-  cmdName: string;
+interface TemplateCreatorParams {
+  name: string;
   template: string | Record<string, any>;
   templateFileName: string;
   docsLink: string;
-  successMessage: string;
+  isConfig: boolean;
+}
 
-  constructor(
-    toolName: string,
-    template: string | Record<string, any>,
-    templateFileName: string,
-    docsLink: string,
-    isConfig: boolean
-  ) {
-    this.toolName = toolName;
-    this.title = `Create ${toolName}${isConfig ? " Configuration" : ""} File`;
-    this.cmdName = `create${toolName}${isConfig ? "Config" : ""}File`;
-    this.template = template;
+export class TemplateCreator {
+  static readonly VIEW_FILE = "View Template";
+  static readonly VIEW_DOCS = "View Docs";
+
+  // Provided instance vars
+  name: string;
+  templateFileName: string;
+  template: string | Record<string, any>;
+  docsLink: string;
+  isConfig: boolean;
+
+  // Constructed instance vars
+  title: string;
+  cmdName: string;
+  onSuccess: string;
+
+  constructor(params: TemplateCreatorParams) {
+    const { name, templateFileName, template, docsLink, isConfig } = params;
+
+    this.name = name;
     this.templateFileName = templateFileName;
+    this.template = template;
     this.docsLink = docsLink;
-    this.successMessage = `Created ${this.toolName} ${
-      isConfig ? "Configuration" : ""
-    } File!`;
+    this.isConfig = isConfig;
+
+    this.title = `Create ${name}${isConfig ? " Configuration" : ""} Template`;
+    this.cmdName = `template.create.${name}${isConfig ? "Config" : ""}`;
+    this.onSuccess = `Created ${name}${
+      isConfig ? " Configuration" : ""
+    } Template!`;
   }
 
   async handler(): Promise<void> {
@@ -55,7 +65,7 @@ export class TemplateCreator {
           });
 
       const selected = await window.showInformationMessage(
-        this.successMessage,
+        this.onSuccess,
         TemplateCreator.VIEW_FILE,
         TemplateCreator.VIEW_DOCS
       );

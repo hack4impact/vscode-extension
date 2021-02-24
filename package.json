@@ -33,43 +33,43 @@
     "editorconfig.editorconfig"
   ],
   "activationEvents": [
-    "onCommand:hack4impact.createESLintConfigFile",
-    "onCommand:hack4impact.createPrettierConfigFile",
-    "onCommand:hack4impact.createEditorConfigConfigFile",
-    "onCommand:hack4impact.createMarkdownLintConfigFile",
-    "onCommand:hack4impact.createGitIgnoreFile",
-    "onCommand:hack4impact.createChangelogFile",
-    "onCommand:hack4impact.createLicenseFile"
+    "onCommand:hack4impact.template.create.ESLintConfig",
+    "onCommand:hack4impact.template.create.PrettierConfig",
+    "onCommand:hack4impact.template.create.EditorConfigConfig",
+    "onCommand:hack4impact.template.create.MarkdownLintConfig",
+    "onCommand:hack4impact.template.create.GitIgnore",
+    "onCommand:hack4impact.template.create.Changelog",
+    "onCommand:hack4impact.template.create.License"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "hack4impact.createESLintConfigFile",
-        "title": "Hack4Impact: Create ESLint Configuration File"
+        "command": "hack4impact.template.create.ESLintConfig",
+        "title": "Hack4Impact: Create ESLint Configuration Template"
       },
       {
-        "command": "hack4impact.createPrettierConfigFile",
-        "title": "Hack4Impact: Create Prettier Configuration File"
+        "command": "hack4impact.template.create.PrettierConfig",
+        "title": "Hack4Impact: Create Prettier Configuration Template"
       },
       {
-        "command": "hack4impact.createEditorConfigConfigFile",
-        "title": "Hack4Impact: Create EditorConfig Configuration File"
+        "command": "hack4impact.template.create.EditorConfigConfig",
+        "title": "Hack4Impact: Create EditorConfig Configuration Template"
       },
       {
-        "command": "hack4impact.createMarkdownLintConfigFile",
-        "title": "Hack4Impact: Create MarkdownLint Configuration File"
+        "command": "hack4impact.template.create.MarkdownLintConfig",
+        "title": "Hack4Impact: Create MarkdownLint Configuration Template"
       },
       {
-        "command": "hack4impact.createGitIgnoreFile",
-        "title": "Hack4Impact: Create GitIgnore File"
+        "command": "hack4impact.template.create.GitIgnore",
+        "title": "Hack4Impact: Create GitIgnore Template"
       },
       {
-        "command": "hack4impact.createChangelogFile",
-        "title": "Hack4Impact: Create Changelog File"
+        "command": "hack4impact.template.create.Changelog",
+        "title": "Hack4Impact: Create Changelog Template"
       },
       {
-        "command": "hack4impact.createLicenseFile",
-        "title": "Hack4Impact: Create License File"
+        "command": "hack4impact.template.create.License",
+        "title": "Hack4Impact: Create License Template"
       }
     ]
   },

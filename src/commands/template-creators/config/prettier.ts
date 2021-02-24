@@ -1,7 +1,7 @@
 import { TemplateCreator } from "../helpers";
 import { Options } from "prettier";
 
-const config: Options = {
+const template: Options = {
   singleQuote: false,
   endOfLine: "lf",
   semi: true,
@@ -13,10 +13,10 @@ const config: Options = {
   trailingComma: "es5",
 };
 
-export default new TemplateCreator(
-  "Prettier",
-  config,
-  ".prettierrc.json",
-  "https://prettier.io/docs/en/configuration.html",
-  true
-);
+export default new TemplateCreator({
+  name: "Prettier",
+  templateFileName: ".prettierrc.json",
+  template,
+  docsLink: "https://prettier.io/docs/en/configuration.html",
+  isConfig: true,
+});

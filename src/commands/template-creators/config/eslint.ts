@@ -1,6 +1,6 @@
 import { TemplateCreator } from "../helpers";
 
-const config = {
+const template = {
   plugins: ["@hack4impact-uiuc"],
   extends: ["plugin:@hack4impact-uiuc/base", "plugin:@hack4impact-uiuc/react"],
   env: {
@@ -9,10 +9,10 @@ const config = {
   rules: {},
 };
 
-export default new TemplateCreator(
-  "ESLint",
-  config,
-  ".eslintrc.json",
-  "https://eslint.org/docs/user-guide/configuring/",
-  true
-);
+export default new TemplateCreator({
+  name: "ESLint",
+  templateFileName: ".eslintrc.json",
+  template,
+  docsLink: "https://eslint.org/docs/user-guide/configuring/",
+  isConfig: true,
+});

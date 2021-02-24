@@ -1,6 +1,6 @@
 import { TemplateCreator } from "../helpers";
 
-const config = `# See https://help.github.com/articles/ignoring-files/ for more information on ignoring files.
+const template = `# See https://help.github.com/articles/ignoring-files/ for more information on ignoring files.
 
 # dependencies
 node_modules/
@@ -20,10 +20,10 @@ build/
 .DS_Store
 `;
 
-export default new TemplateCreator(
-  "GitIgnore",
-  config,
-  ".gitignore",
-  "https://git-scm.com/docs/gitignore",
-  false
-);
+export default new TemplateCreator({
+  name: "GitIgnore",
+  templateFileName: ".gitignore",
+  template,
+  docsLink: "https://git-scm.com/docs/gitignore",
+  isConfig: false,
+});
