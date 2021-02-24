@@ -36,7 +36,8 @@
     "onCommand:hack4impact.createESLintConfigFile",
     "onCommand:hack4impact.createPrettierConfigFile",
     "onCommand:hack4impact.createEditorConfigConfigFile",
-    "onCommand:hack4impact.createMarkdownLintConfigFile"
+    "onCommand:hack4impact.createMarkdownLintConfigFile",
+    "onCommand:hack4impact.createGitIgnoreFile"
   ],
   "contributes": {
     "commands": [
@@ -55,6 +56,10 @@
       {
         "command": "hack4impact.createMarkdownLintConfigFile",
         "title": "Hack4Impact: Create MarkdownLint Configuration File"
+      },
+      {
+        "command": "hack4impact.createGitIgnoreFile",
+        "title": "Hack4Impact: Create GitIgnore File"
       }
     ]
   },

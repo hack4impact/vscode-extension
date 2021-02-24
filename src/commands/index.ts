@@ -1,6 +1,6 @@
-import ConfigCreators from "./config-creators";
+import TemplateCreators from "./template-creators";
 
-export default [...ConfigCreators].map((command) => {
+export default [...TemplateCreators].map((command) => {
   command.title = `Hack4Impact: ${command.title}`;
   command.cmdName = `hack4impact.${command.cmdName}`;
   return command;

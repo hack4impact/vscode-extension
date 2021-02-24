@@ -13,3 +13,4 @@ build/
 
 # misc
 .husky/_
+.husky/.gitignore

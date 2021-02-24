@@ -4,14 +4,14 @@ import { join } from "path";
 import { env, Uri, window, workspace } from "../../__mocks__/vscode";
 
 // Internals
-import ConfigCreators from "../../src/commands/config-creators";
-import { ConfigCreator } from "../../src/commands/config-creators/helpers";
+import TemplateCreators from "../../src/commands/template-creators";
+import { TemplateCreator } from "../../src/commands/template-creators/helpers";
 import { OUTPUT_FOLDER_PATH } from "../constants";
 
-for (const Creator of ConfigCreators)
+for (const Creator of TemplateCreators)
   describe(Creator.toolName, () => {
     test("Without folder selected", async () => {
-      const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.configFileName);
+      const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.templateFileName);
 
       window.showOpenDialog.mockReturnValue(Promise.resolve(undefined));
       await Creator.handler();
@@ -33,7 +33,7 @@ for (const Creator of ConfigCreators)
     });
 
     test("With folder selected", async () => {
-      const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.configFileName);
+      const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.templateFileName);
 
       window.showOpenDialog.mockReturnValue(
         Promise.resolve([
@@ -53,22 +53,22 @@ for (const Creator of ConfigCreators)
 
       expect(window.showInformationMessage).toHaveBeenCalledTimes(1);
       expect(window.showInformationMessage).toHaveBeenCalledWith(
-        `Created ${Creator.toolName} Configuration File!`,
-        ConfigCreator.VIEW_FILE,
-        ConfigCreator.VIEW_DOCS
+        Creator.successMessage,
+        TemplateCreator.VIEW_FILE,
+        TemplateCreator.VIEW_DOCS
       );
 
       const fileContent = await readFile(OUTPUT_PATH, "utf-8");
 
-      expect(fileContent).toStrictEqual(Creator.config);
+      expect(fileContent).toStrictEqual(Creator.template);
     });
 
-    test(ConfigCreator.VIEW_FILE, async () => {
-      const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.configFileName);
+    test(TemplateCreator.VIEW_FILE, async () => {
+      const OUTPUT_PATH = join(OUTPUT_FOLDER_PATH, Creator.templateFileName);
       const MOCK_DOC = "Mock Doc";
 
       window.showInformationMessage.mockReturnValue(
-        Promise.resolve(ConfigCreator.VIEW_FILE)
+        Promise.resolve(TemplateCreator.VIEW_FILE)
       );
       workspace.openTextDocument.mockReturnValue(MOCK_DOC);
 
@@ -81,11 +81,11 @@ for (const Creator of ConfigCreators)
       expect(window.showTextDocument).toHaveBeenCalledWith(MOCK_DOC);
     });
 
-    test(ConfigCreator.VIEW_DOCS, async () => {
+    test(TemplateCreator.VIEW_DOCS, async () => {
       const MOCK_URI = "Mock URI";
 
       window.showInformationMessage.mockReturnValue(
-        Promise.resolve(ConfigCreator.VIEW_DOCS)
+        Promise.resolve(TemplateCreator.VIEW_DOCS)
       );
       Uri.parse.mockReturnValue(MOCK_URI);
 

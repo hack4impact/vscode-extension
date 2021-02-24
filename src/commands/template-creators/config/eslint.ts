@@ -1,4 +1,4 @@
-import { ConfigCreator } from "../helpers";
+import { TemplateCreator } from "../helpers";
 
 const config = {
   plugins: ["@hack4impact-uiuc"],
@@ -9,9 +9,10 @@ const config = {
   rules: {},
 };
 
-export default new ConfigCreator(
+export default new TemplateCreator(
   "ESLint",
   config,
   ".eslintrc.json",
-  "https://eslint.org/docs/user-guide/configuring/"
+  "https://eslint.org/docs/user-guide/configuring/",
+  true
 );
