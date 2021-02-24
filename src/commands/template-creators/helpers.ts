@@ -1,6 +1,7 @@
 import { env, window, Uri, workspace } from "vscode";
 import { join } from "path";
 import { promises } from "fs";
+import { writeFile as writeJSONFile } from "jsonfile";
 
 const { writeFile } = promises;
 
@@ -11,7 +12,7 @@ export class TemplateCreator {
   toolName: string;
   title: string;
   cmdName: string;
-  template: string;
+  template: string | Record<string, any>;
   templateFileName: string;
   docsLink: string;
   successMessage: string;
@@ -26,10 +27,7 @@ export class TemplateCreator {
     this.toolName = toolName;
     this.title = `Create ${toolName}${isConfig ? " Configuration" : ""} File`;
     this.cmdName = `create${toolName}${isConfig ? "Config" : ""}File`;
-    this.template =
-      typeof template === "string"
-        ? template
-        : JSON.stringify(template, undefined, 2);
+    this.template = template;
     this.templateFileName = templateFileName;
     this.docsLink = docsLink;
     this.successMessage = `Created ${this.toolName} ${
@@ -49,7 +47,12 @@ export class TemplateCreator {
 
       const outputPath = join(folderUri.fsPath, this.templateFileName);
 
-      await writeFile(outputPath, this.template, "utf-8");
+      typeof this.template === "string"
+        ? await writeFile(outputPath, this.template, "utf-8")
+        : await writeJSONFile(outputPath, this.template, {
+            EOL: "\n",
+            spaces: 2,
+          });
 
       const selected = await window.showInformationMessage(
         this.successMessage,

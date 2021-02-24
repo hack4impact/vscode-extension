@@ -11,12 +11,12 @@ test("Correct publisher", () => {
 });
 
 test("Correct display name", () => {
-  expect(pkg.displayName).toBe("Hack4Impact's Recommended Extensions");
+  expect(pkg.displayName).toBe("Hack4Impact's Recommendations");
 });
 
 test("Correct description", () => {
   expect(pkg.description).toBe(
-    "Hack4Impact's Recommended Extensions for Quality Project Development"
+    "Hack4Impact's Recommended Extensions and Templates for Quality Project Development"
   );
 });
 
@@ -101,6 +101,12 @@ test("Contains scripts", () => {
   checkIfObjectLiteral(scripts);
 });
 
+test("Contains dependencies", () => {
+  const dependencies = pkg.dependencies;
+
+  checkIfObjectLiteral(dependencies);
+});
+
 test("Contains dev dependencies", () => {
   const devDeps = pkg.devDependencies;
 
@@ -118,9 +124,4 @@ test("Contains activation events", () => {
   const activationEvents = pkg.activationEvents;
 
   expect(Array.isArray(activationEvents)).toBe(true);
-});
-
-test("Contains no dependencies", () => {
-  //@ts-expect-error Making sure it is not defined
-  expect(pkg.dependencies).toBeUndefined();
 });

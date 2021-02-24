@@ -1,8 +1,8 @@
 {
   "name": "h4i-extension-pack",
   "publisher": "hack4impact",
-  "displayName": "Hack4Impact's Recommended Extensions",
-  "description": "Hack4Impact's Recommended Extensions for Quality Project Development",
+  "displayName": "Hack4Impact's Recommendations",
+  "description": "Hack4Impact's Recommended Extensions and Templates for Quality Project Development",
   "version": "0.0.1",
   "main": "./dist/extension.js",
   "icon": "static/hack4impact-icon.png",
@@ -89,6 +89,9 @@
     "recreate-releases": "ts-node scripts/recreate-releases.ts",
     "create-package-json": "ts-node scripts/create-package-json.ts"
   },
+  "dependencies": {
+    "jsonfile": "^6.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",
@@ -96,6 +99,7 @@
     "@octokit/rest": "^18.2.0",
     "@types/dotenv-safe": "^8.1.1",
     "@types/jest": "^26.0.20",
+    "@types/jsonfile": "^6.0.0",
     "@types/mock-require": "^2.0.0",
     "@types/node": "^14.14.31",
     "@types/prettier": "^2.2.1",

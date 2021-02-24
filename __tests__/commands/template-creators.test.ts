@@ -60,7 +60,12 @@ for (const Creator of TemplateCreators)
 
       const fileContent = await readFile(OUTPUT_PATH, "utf-8");
 
-      expect(fileContent).toStrictEqual(Creator.template);
+      const parsedContent =
+        typeof Creator.template === "string"
+          ? fileContent
+          : JSON.parse(fileContent);
+
+      expect(parsedContent).toStrictEqual(Creator.template);
     });
 
     test(TemplateCreator.VIEW_FILE, async () => {
