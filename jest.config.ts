@@ -54,7 +54,7 @@ export default {
   // forceCoverageMatch: [],
 
   // A path to a module which exports an async function that is triggered once before all test suites
-  // globalSetup: undefined,
+  globalSetup: "<rootDir>/__tests__/set-up-tests.ts",
 
   // A path to a module which exports an async function that is triggered once after all test suites
   // globalTeardown: undefined,
@@ -146,10 +146,7 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  testMatch: ["**/__tests__/**/*.test.ts"],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -187,7 +184,7 @@ export default {
   verbose: true,
 
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
-  watchPathIgnorePatterns: ["tests/vsce.test.ts"],
+  watchPathIgnorePatterns: ["<rootDir>/__tests__/misc/vsce.test.ts"],
 
   // Whether to use watchman for file crawling
   // watchman: true,

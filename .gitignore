@@ -6,6 +6,7 @@ node_modules/
 # testing
 coverage/
 .vscode-test/
+__output__/
 
 # production
 dist/

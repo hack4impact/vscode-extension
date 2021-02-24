@@ -1,5 +1,5 @@
 import { listFiles, PackageManager } from "vsce";
-import { checkArray } from "./helpers";
+import { checkArray } from "../helpers";
 
 test("Correct files are packaged", async () => {
   const files = await listFiles({ packageManager: PackageManager.Npm });
