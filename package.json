@@ -4,6 +4,7 @@
   "displayName": "Hack4Impact's Recommended Extensions",
   "description": "Hack4Impact's Recommended Extensions for Quality Project Development",
   "version": "0.0.1",
+  "main": "./dist/extension.js",
   "icon": "static/hack4impact-icon.png",
   "license": "MIT",
   "author": {
@@ -31,6 +32,32 @@
     "DavidAnson.vscode-markdownlint",
     "eamodio.gitlens"
   ],
+  "activationEvents": [
+    "onCommand:hack4impact.createESLintConfigFile",
+    "onCommand:hack4impact.createPrettierConfigFile",
+    "onCommand:hack4impact.createEditorConfigConfigFile",
+    "onCommand:hack4impact.createMarkdownLintConfigFile"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "hack4impact.createESLintConfigFile",
+        "title": "Hack4Impact: Create ESLint Configuration File"
+      },
+      {
+        "command": "hack4impact.createPrettierConfigFile",
+        "title": "Hack4Impact: Create Prettier Configuration File"
+      },
+      {
+        "command": "hack4impact.createEditorConfigConfigFile",
+        "title": "Hack4Impact: Create EditorConfig Configuration File"
+      },
+      {
+        "command": "hack4impact.createMarkdownLintConfigFile",
+        "title": "Hack4Impact: Create MarkdownLint Configuration File"
+      }
+    ]
+  },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
@@ -44,9 +71,13 @@
     "postdeploy": "pinst --enable",
     "lint": "npx lint-check",
     "lint:staged": "lint-staged",
-    "build": "vsce package",
+    "compile": "webpack --mode production",
+    "compile:dev": "webpack --mode development",
+    "start": "webpack --mode development --watch",
+    "build": "npm run compile && vsce package",
     "postinstall": "husky install",
-    "recreate-releases": "ts-node scripts/recreate-releases.ts"
+    "recreate-releases": "ts-node scripts/recreate-releases.ts",
+    "create-package-json": "ts-node scripts/create-package-json.ts"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
@@ -55,21 +86,32 @@
     "@octokit/rest": "^18.2.0",
     "@types/dotenv-safe": "^8.1.1",
     "@types/jest": "^26.0.20",
+    "@types/mock-require": "^2.0.0",
+    "@types/node": "^14.14.31",
+    "@types/prettier": "^2.2.1",
     "@types/semver": "^7.3.4",
+    "@types/vscode": "^1.53.0",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "dotenv-safe": "^8.2.0",
     "eslint": "^7.20.0",
     "husky": "^5.0.9",
     "jest": "^26.6.3",
+    "jest-environment-node": "^26.6.2",
     "lint-staged": "^10.5.4",
     "markdownlint-cli": "^0.26.0",
+    "mock-require": "^3.0.3",
     "pinst": "^2.1.4",
     "prettier": "^2.2.1",
+    "prettier-plugin-sh": "^0.6.0",
     "semver": "^7.3.4",
     "ts-jest": "^26.5.1",
+    "ts-loader": "^8.0.17",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5",
-    "vsce": "^1.85.0"
+    "vsce": "^1.85.0",
+    "vscode-test": "^1.5.1",
+    "webpack": "^5.24.0",
+    "webpack-cli": "^4.5.0"
   }
 }

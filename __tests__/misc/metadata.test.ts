@@ -1,6 +1,6 @@
-import pkg from "../package.json";
+import pkg from "../../package.json";
 import { valid, validRange } from "semver";
-import { checkArray, checkIfObjectLiteral, checkObject } from "./helpers";
+import { checkArray, checkIfObjectLiteral, checkObject } from "../helpers";
 
 test("Correct name", () => {
   expect(pkg.name).toBe("h4i-extension-pack");
@@ -105,6 +105,19 @@ test("Contains dev dependencies", () => {
   const devDeps = pkg.devDependencies;
 
   checkIfObjectLiteral(devDeps);
+});
+
+test("Contains contributes", () => {
+  const contributes = pkg.contributes;
+
+  checkIfObjectLiteral(contributes);
+  expect(Array.isArray(contributes.commands)).toBe(true);
+});
+
+test("Contains activation events", () => {
+  const activationEvents = pkg.activationEvents;
+
+  expect(Array.isArray(activationEvents)).toBe(true);
 });
 
 test("Contains no dependencies", () => {

@@ -3,8 +3,13 @@ node_modules/
 
 # testing
 coverage/
+.vscode-test/
+__output__/
 
 # production
 dist/
 out/
 build/
+
+# misc
+.husky/_
