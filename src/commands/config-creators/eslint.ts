@@ -9,4 +9,4 @@ const config = {
   rules: {},
 };
 
-export default new ConfigCreator("ESLint", config);
+export default new ConfigCreator("ESLint", config, ".eslintrc.json");

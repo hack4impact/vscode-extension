@@ -9,4 +9,4 @@ const config: Options = {
   arrowParens: "always",
 };
 
-export default new ConfigCreator("Prettier", config);
+export default new ConfigCreator("Prettier", config, ".prettierrc.json");
