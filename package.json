@@ -34,7 +34,8 @@
   ],
   "activationEvents": [
     "onCommand:hack4impact.createESLintConfigFile",
-    "onCommand:hack4impact.createPrettierConfigFile"
+    "onCommand:hack4impact.createPrettierConfigFile",
+    "onCommand:hack4impact.createEditorConfigConfigFile"
   ],
   "contributes": {
     "commands": [
@@ -45,6 +46,10 @@
       {
         "command": "hack4impact.createPrettierConfigFile",
         "title": "Hack4Impact: Create Prettier Configuration File"
+      },
+      {
+        "command": "hack4impact.createEditorConfigConfigFile",
+        "title": "Hack4Impact: Create EditorConfig Configuration File"
       }
     ]
   },
@@ -62,6 +67,7 @@
     "lint": "npx lint-check",
     "lint:staged": "lint-staged",
     "compile": "webpack --mode production",
+    "compile:dev": "webpack --mode development",
     "start": "webpack --mode development --watch",
     "build": "npm run compile && vsce package",
     "postinstall": "husky install",

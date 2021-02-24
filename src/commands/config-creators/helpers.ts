@@ -12,12 +12,15 @@ export class ConfigCreator {
 
   constructor(
     title: string,
-    config: Record<string, any>,
+    config: string | Record<string, any>,
     configFileName: string
   ) {
     this.title = `Create ${title} Configuration File`;
     this.cmdName = `create${title}ConfigFile`;
-    this.config = JSON.stringify(config, undefined, 2);
+    this.config =
+      typeof config === "string"
+        ? config
+        : JSON.stringify(config, undefined, 2);
     this.configFileName = configFileName;
   }
 
