@@ -5,7 +5,7 @@ import { promises } from "fs";
 import { writeFile as writeJSONFile } from "jsonfile";
 
 // Internals
-import { BaseCommand } from "../helpers";
+import { BaseCommand, getSingleFolder } from "../helpers";
 
 const { writeFile } = promises;
 
@@ -50,35 +50,39 @@ export class TemplateCreator extends BaseCommand {
 
   async handler(...args: any[]): Promise<void> {
     await super.handler(...args);
-    const folderResult = await window.showOpenDialog({
-      canSelectFiles: false,
-      canSelectFolders: true,
-      canSelectMany: false,
-    });
+    const folderResult = await getSingleFolder();
 
-    if (folderResult && folderResult.length === 1) {
-      const folderUri = folderResult[0];
+    if (folderResult) {
+      const filePath = await this.writeTemplateFile(folderResult);
 
-      const outputPath = join(folderUri.fsPath, this.templateFileName);
-
-      typeof this.template === "string"
-        ? await writeFile(outputPath, this.template, "utf-8")
-        : await writeJSONFile(outputPath, this.template, {
-            EOL: "\n",
-            spaces: 2,
-          });
-
-      const selected = await window.showInformationMessage(
-        this.onSuccess,
-        TemplateCreator.VIEW_FILE,
-        TemplateCreator.VIEW_DOCS
-      );
-
-      if (selected === TemplateCreator.VIEW_FILE) {
-        const doc = await workspace.openTextDocument(outputPath);
-        await window.showTextDocument(doc);
-      } else if (selected === TemplateCreator.VIEW_DOCS)
-        await env.openExternal(Uri.parse(this.docsLink));
+      await this.showSuccessMessage(filePath);
     }
+  }
+
+  async writeTemplateFile(folder: Uri): Promise<string> {
+    const filePath = join(folder.fsPath, this.templateFileName);
+
+    typeof this.template === "string"
+      ? await writeFile(filePath, this.template, "utf-8")
+      : await writeJSONFile(filePath, this.template, {
+          EOL: "\n",
+          spaces: 2,
+        });
+
+    return filePath;
+  }
+
+  async showSuccessMessage(filePath: string) {
+    const selected = await window.showInformationMessage(
+      this.onSuccess,
+      TemplateCreator.VIEW_FILE,
+      TemplateCreator.VIEW_DOCS
+    );
+
+    if (selected === TemplateCreator.VIEW_FILE) {
+      const doc = await workspace.openTextDocument(filePath);
+      await window.showTextDocument(doc);
+    } else if (selected === TemplateCreator.VIEW_DOCS)
+      await env.openExternal(Uri.parse(this.docsLink));
   }
 }

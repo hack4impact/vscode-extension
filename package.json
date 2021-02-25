@@ -39,7 +39,8 @@
     "onCommand:hack4impact.template.create.MarkdownLintConfig",
     "onCommand:hack4impact.template.create.GitIgnore",
     "onCommand:hack4impact.template.create.Changelog",
-    "onCommand:hack4impact.template.create.License"
+    "onCommand:hack4impact.template.create.License",
+    "onCommand:hack4impact.template.create"
   ],
   "contributes": {
     "commands": [
@@ -70,6 +71,10 @@
       {
         "command": "hack4impact.template.create.License",
         "title": "Hack4Impact: Create License Template"
+      },
+      {
+        "command": "hack4impact.template.create",
+        "title": "Hack4Impact: Create Template Files"
       }
     ]
   },
