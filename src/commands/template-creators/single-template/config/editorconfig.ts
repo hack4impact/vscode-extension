@@ -1,4 +1,4 @@
-import { TemplateCreator } from "../helpers";
+import SingleTemplate from "../index";
 
 const template = `# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
 
@@ -13,7 +13,7 @@ indent_style = space
 indent_size = 2
 `;
 
-export default new TemplateCreator({
+export default new SingleTemplate({
   name: "EditorConfig",
   templateFileName: ".editorconfig",
   template,

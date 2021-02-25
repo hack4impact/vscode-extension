@@ -1,4 +1,4 @@
-import { TemplateCreator } from "../helpers";
+import SingleTemplate from "../index";
 
 const template = {
   plugins: ["@hack4impact-uiuc"],
@@ -9,7 +9,7 @@ const template = {
   rules: {},
 };
 
-export default new TemplateCreator({
+export default new SingleTemplate({
   name: "ESLint",
   templateFileName: ".eslintrc.json",
   template,

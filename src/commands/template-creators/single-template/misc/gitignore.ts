@@ -1,4 +1,4 @@
-import { TemplateCreator } from "../helpers";
+import SingleTemplate from "../index";
 
 const template = `# See https://help.github.com/articles/ignoring-files/ for more information on ignoring files.
 
@@ -20,7 +20,7 @@ build/
 .DS_Store
 `;
 
-export default new TemplateCreator({
+export default new SingleTemplate({
   name: "GitIgnore",
   templateFileName: ".gitignore",
   template,

@@ -1,4 +1,4 @@
-import { TemplateCreator } from "../helpers";
+import SingleTemplate from "../index";
 
 const template = `# Changelog
 
@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/), and this 
 ## Unreleased
 `;
 
-export default new TemplateCreator({
+export default new SingleTemplate({
   name: "Changelog",
   templateFileName: "CHANGELOG.md",
   template,

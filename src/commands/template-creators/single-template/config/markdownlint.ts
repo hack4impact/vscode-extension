@@ -1,10 +1,10 @@
-import { TemplateCreator } from "../helpers";
+import SingleTemplate from "../index";
 
 const template = {
   "no-inline-html": false,
 };
 
-export default new TemplateCreator({
+export default new SingleTemplate({
   name: "MarkdownLint",
   templateFileName: ".markdownlint.json",
   template,

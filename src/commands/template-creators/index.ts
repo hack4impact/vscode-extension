@@ -1,18 +1,12 @@
-// Externals
-import { Uri, window } from "vscode";
-
 // Internals
-import ESLint from "./config/eslint";
-import Prettier from "./config/prettier";
-import EditorConfig from "./config/editorconfig";
-import MarkdownLint from "./config/markdownlint";
+import ESLint from "./single-template/config/eslint";
+import Prettier from "./single-template/config/prettier";
+import EditorConfig from "./single-template/config/editorconfig";
+import MarkdownLint from "./single-template/config/markdownlint";
 
-import GitIgnore from "./misc/gitignore";
-import Changelog from "./misc/changelog";
-import License from "./misc/license";
-
-import { BaseCommand, getSingleFolder } from "../helpers";
-import { TemplateCreator } from "./helpers";
+import GitIgnore from "./single-template/misc/gitignore";
+import Changelog from "./single-template/misc/changelog";
+import License from "./single-template/misc/license";
 
 const allTemplates = [
   ESLint,
@@ -24,61 +18,5 @@ const allTemplates = [
   License,
 ];
 
-export class CreateTemplates extends BaseCommand {
-  constructor() {
-    super();
-    this.cmdName = "template.create";
-    this.title = "Create Template Files";
-  }
-
-  async handler(...args: any[]): Promise<void> {
-    await super.handler(...args);
-
-    const picked = await this.showTemplateQuickPick();
-
-    if (picked) {
-      const folder = await getSingleFolder();
-
-      if (folder) {
-        const templates = picked
-          .map((p) => allTemplates.find((t) => t.name === p))
-          .filter((t): t is TemplateCreator => t !== undefined);
-
-        const createdFiles = await this.createTemplateFiles(templates, folder);
-
-        await this.showSuccessMessages(templates, createdFiles);
-      }
-    }
-  }
-
-  async showTemplateQuickPick(): Promise<string[] | undefined> {
-    return window.showQuickPick(
-      allTemplates.map((t) => t.name),
-      {
-        canPickMany: true,
-        placeHolder: "Pick templates to create...",
-        ignoreFocusOut: true,
-      }
-    );
-  }
-
-  async createTemplateFiles(
-    templates: TemplateCreator[],
-    folder: Uri
-  ): Promise<string[]> {
-    return Promise.all(
-      templates.map((template) => template.writeTemplateFile(folder))
-    );
-  }
-
-  async showSuccessMessages(
-    templates: TemplateCreator[],
-    files: string[]
-  ): Promise<void[]> {
-    return Promise.all(
-      templates.map((template, i) => template.showSuccessMessage(files[i]))
-    );
-  }
-}
-
 export default allTemplates;
+export { default as MultiTemplate } from "./multi-template";

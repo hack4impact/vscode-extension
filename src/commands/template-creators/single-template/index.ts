@@ -5,11 +5,11 @@ import { promises } from "fs";
 import { writeFile as writeJSONFile } from "jsonfile";
 
 // Internals
-import { BaseCommand, getSingleFolder } from "../helpers";
+import { BaseCommand, getSingleFolder } from "../../helpers";
 
 const { writeFile } = promises;
 
-interface TemplateCreatorParams {
+interface SingleTemplateParams {
   name: string;
   template: string | Record<string, any>;
   templateFileName: string;
@@ -17,8 +17,8 @@ interface TemplateCreatorParams {
   isConfig: boolean;
 }
 
-export class TemplateCreator extends BaseCommand {
-  static readonly VIEW_FILE = "View Template";
+export default class SingleTemplate extends BaseCommand {
+  static readonly VIEW_TEMPLATE = "View Template";
   static readonly VIEW_DOCS = "View Docs";
 
   // Provided instance vars
@@ -31,7 +31,7 @@ export class TemplateCreator extends BaseCommand {
   // Constructed instance vars
   onSuccess: string;
 
-  constructor(params: TemplateCreatorParams) {
+  constructor(params: SingleTemplateParams) {
     super();
     const { name, templateFileName, template, docsLink, isConfig } = params;
 
@@ -72,17 +72,17 @@ export class TemplateCreator extends BaseCommand {
     return filePath;
   }
 
-  async showSuccessMessage(filePath: string) {
+  async showSuccessMessage(filePath: string): Promise<void> {
     const selected = await window.showInformationMessage(
       this.onSuccess,
-      TemplateCreator.VIEW_FILE,
-      TemplateCreator.VIEW_DOCS
+      SingleTemplate.VIEW_TEMPLATE,
+      SingleTemplate.VIEW_DOCS
     );
 
-    if (selected === TemplateCreator.VIEW_FILE) {
+    if (selected === SingleTemplate.VIEW_TEMPLATE) {
       const doc = await workspace.openTextDocument(filePath);
       await window.showTextDocument(doc);
-    } else if (selected === TemplateCreator.VIEW_DOCS)
+    } else if (selected === SingleTemplate.VIEW_DOCS)
       await env.openExternal(Uri.parse(this.docsLink));
   }
 }

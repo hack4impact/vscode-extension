@@ -4,6 +4,7 @@ export const window = {
   showWarningMessage: jest.fn(),
   showOpenDialog: jest.fn(),
   showTextDocument: jest.fn(),
+  showQuickPick: jest.fn(),
 };
 
 export const workspace = {

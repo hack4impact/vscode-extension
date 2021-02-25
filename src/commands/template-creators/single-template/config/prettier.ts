@@ -1,4 +1,4 @@
-import { TemplateCreator } from "../helpers";
+import SingleTemplate from "../index";
 import { Options } from "prettier";
 
 const template: Options = {
@@ -13,7 +13,7 @@ const template: Options = {
   trailingComma: "es5",
 };
 
-export default new TemplateCreator({
+export default new SingleTemplate({
   name: "Prettier",
   templateFileName: ".prettierrc.json",
   template,
