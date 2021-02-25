@@ -3,7 +3,7 @@
   "publisher": "hack4impact",
   "displayName": "Hack4Impact's Recommendations",
   "description": "Hack4Impact's Recommended Extensions and Templates for Quality Project Development",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "./dist/extension.js",
   "icon": "static/hack4impact-icon.png",
   "license": "MIT",
@@ -81,7 +81,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "preversion": "npm test",
+    "preversion": "npm run compile && npm test",
     "version:patch": "npm version patch -m 'v%s'",
     "version:minor": "npm version minor -m 'v%s'",
     "version:major": "npm version major -m 'v%s'",

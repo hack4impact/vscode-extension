@@ -1,6 +1,6 @@
-# Contributing to Hack4Impact's Extension Pack
+# Contributing to Hack4Impact's VS Code Extension
 
-Welcome, and thank you for your interest in contributing to Hack4Impact's Extension Pack!
+Welcome, and thank you for your interest in contributing to Hack4Impact's VS Code Extension!
 
 There are many ways in which you can contribute, beyond writing code. The goal of this document is to provide a high-level overview of how you can get involved.
 
@@ -12,7 +12,7 @@ The active community will be eager to assist you. Your well-worded question will
 
 ## Reporting Issues
 
-Have you identified a reproducible problem in Hack4Impact's Extension Pack? Have a feature request? We want to hear about it! Here's how you can make reporting your issue as effective as possible.
+Have you identified a reproducible problem in Hack4Impact's VS Code Extension? Have a feature request? We want to hear about it! Here's how you can make reporting your issue as effective as possible.
 
 ### Look For an Existing Issue
 
