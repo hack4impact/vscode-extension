@@ -86,7 +86,7 @@
     "version:minor": "npm version minor -m 'v%s'",
     "version:major": "npm version major -m 'v%s'",
     "postversion": "git push && git push --follow-tags && npm run recreate-releases",
-    "predeploy": "pinst --disable",
+    "predeploy": "pinst --disable && npm run compile",
     "deploy": "vsce publish",
     "postdeploy": "pinst --enable",
     "lint": "npx lint-check",
