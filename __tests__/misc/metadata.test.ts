@@ -3,7 +3,7 @@ import { valid, validRange } from "semver";
 import { checkArray, checkIfObjectLiteral, checkObject } from "../helpers";
 
 test("Correct name", () => {
-  expect(pkg.name).toBe("h4i-extension-pack");
+  expect(pkg.name).toBe("h4i-recommendations");
 });
 
 test("Correct publisher", () => {
@@ -50,7 +50,7 @@ describe("Correct repository", () => {
   checkObject(
     {
       type: "git",
-      url: "https://github.com/hack4impact/h4i-extension-pack",
+      url: "https://github.com/hack4impact/vscode-extension",
     },
     repo
   );
@@ -66,7 +66,7 @@ describe("Correct bugs", () => {
   const bugs = pkg.bugs;
 
   checkObject(
-    { url: "https://github.com/hack4impact/h4i-extension-pack/issues" },
+    { url: "https://github.com/hack4impact/vscode-extension/issues" },
     bugs
   );
 });

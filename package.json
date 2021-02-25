@@ -1,5 +1,5 @@
 {
-  "name": "h4i-extension-pack",
+  "name": "h4i-recommendations",
   "publisher": "hack4impact",
   "displayName": "Hack4Impact's Recommendations",
   "description": "Hack4Impact's Recommended Extensions and Templates for Quality Project Development",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hack4impact/h4i-extension-pack"
+    "url": "https://github.com/hack4impact/vscode-extension"
   },
   "categories": [
     "Extension Packs",
@@ -21,7 +21,7 @@
     "Formatters"
   ],
   "bugs": {
-    "url": "https://github.com/hack4impact/h4i-extension-pack/issues"
+    "url": "https://github.com/hack4impact/vscode-extension/issues"
   },
   "engines": {
     "vscode": "^1.53.0"
