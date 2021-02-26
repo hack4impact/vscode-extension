@@ -36,8 +36,8 @@
     "onCommand:hack4impact.template.create",
     "onCommand:hack4impact.template.create.ESLintConfig",
     "onCommand:hack4impact.template.create.PrettierConfig",
-    "onCommand:hack4impact.template.create.EditorConfigConfig",
     "onCommand:hack4impact.template.create.MarkdownLintConfig",
+    "onCommand:hack4impact.template.create.EditorConfigConfig",
     "onCommand:hack4impact.template.create.GitIgnore",
     "onCommand:hack4impact.template.create.Changelog",
     "onCommand:hack4impact.template.create.License"
@@ -57,12 +57,12 @@
         "title": "Hack4Impact: Create Prettier Configuration Template"
       },
       {
-        "command": "hack4impact.template.create.EditorConfigConfig",
-        "title": "Hack4Impact: Create EditorConfig Configuration Template"
-      },
-      {
         "command": "hack4impact.template.create.MarkdownLintConfig",
         "title": "Hack4Impact: Create MarkdownLint Configuration Template"
+      },
+      {
+        "command": "hack4impact.template.create.EditorConfigConfig",
+        "title": "Hack4Impact: Create EditorConfig Configuration Template"
       },
       {
         "command": "hack4impact.template.create.GitIgnore",
@@ -123,7 +123,6 @@
     "eslint": "^7.20.0",
     "husky": "^5.0.9",
     "jest": "^26.6.3",
-    "jest-environment-node": "^26.6.2",
     "linkinator": "^2.13.6",
     "lint-staged": "^10.5.4",
     "markdownlint-cli": "^0.26.0",
@@ -138,7 +137,6 @@
     "ts-node": "^9.1.1",
     "typescript": "^4.1.5",
     "vsce": "^1.85.0",
-    "vscode-test": "^1.5.1",
     "webpack": "^5.24.0",
     "webpack-cli": "^4.5.0"
   }

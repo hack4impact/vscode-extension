@@ -11,8 +11,8 @@ import License from "./single-template/misc/license";
 const allTemplates = [
   ESLint,
   Prettier,
-  EditorConfig,
   MarkdownLint,
+  EditorConfig,
   GitIgnore,
   Changelog,
   License,
