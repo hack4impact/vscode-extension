@@ -30,9 +30,20 @@
 
 ## Included Extensions
 
-| Name             | Icon                                                                               | Links                                                                                                                                      |
-| ---------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Prettier**     | <img src="static/pack-icons/prettier.png" alt="Prettier Icon" width="100">         | <a href="vscode:extension/esbenp.prettier-vscode">Extension</a><br>[Repository](https://github.com/prettier/prettier-vscode)               |
-| **ESLint**       | <img src="static/pack-icons/eslint.png" alt="ESLint Icon" width="100">             | <a href="vscode:extension/dbaeumer.vscode-eslint">Extension</a><br> [Repository](https://github.com/Microsoft/vscode-eslint)               |
-| **MarkdownLint** | <img src="static/pack-icons/markdownlint.png" alt="MarkdownLint Icon" width="100"> | <a href="vscode:extension/DavidAnson.vscode-markdownlint">Extension</a><br>[Repository](https://github.com/DavidAnson/vscode-markdownlint) |
-| **EditorConfig** | <img src="static/pack-icons/editorconfig.png" alt="EditorConfig Icon" width="100"> | <a href="vscode:extension/EditorConfig.EditorConfig">Extension</a><br>[Repository](https://github.com/editorconfig/editorconfig-vscode)    |
+| Name             | Icon                                                                               | Links                                                       |
+| ---------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Prettier**     | <img src="static/pack-icons/prettier.png" alt="Prettier Icon" width="100">         | [Prettier - Marketplace]<br>[Prettier - Repository]         |
+| **ESLint**       | <img src="static/pack-icons/eslint.png" alt="ESLint Icon" width="100">             | [ESLint - Marketplace]<br>[ESLint - Repository]             |
+| **MarkdownLint** | <img src="static/pack-icons/markdownlint.png" alt="MarkdownLint Icon" width="100"> | [MarkdownLint - Marketplace]<br>[MarkdownLint - Repository] |
+| **EditorConfig** | <img src="static/pack-icons/editorconfig.png" alt="EditorConfig Icon" width="100"> | [EditorConfig - Marketplace]<br>[EditorConfig - Repository] |
+
+<!-- Start Reference Links -->
+
+[prettier - marketplace]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+[prettier - repository]: https://github.com/prettier/prettier-vscode
+[eslint - marketplace]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[eslint - repository]: https://github.com/Microsoft/vscode-eslint
+[markdownlint - marketplace]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
+[markdownlint - repository]: https://github.com/DavidAnson/vscode-markdownlint
+[editorconfig - marketplace]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[editorconfig - repository]: https://github.com/editorconfig/editorconfig-vscode
