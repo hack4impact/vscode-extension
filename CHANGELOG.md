@@ -7,9 +7,24 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/), and this 
 ## Table of Contents <!-- omit in toc -->
 
 - [Unreleased](#unreleased)
+- [[0.1.0] - (2020-02-25)](#010---2020-02-25)
+  - [Added](#added)
+  - [Changed](#changed)
 - [[0.0.1] - (2020-02-25)](#001---2020-02-25)
 
 ## Unreleased
+
+---
+
+## [0.1.0] - (2020-02-25)
+
+### Added
+
+- [README] Documentation
+
+### Changed
+
+- ESLint Configuration Template
 
 ---
 
@@ -20,3 +35,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/), and this 
 ---
 
 <!-- Start Reference Links -->
+
+[readme]: https://github.com/hack4impact/vscode-extension#readme
