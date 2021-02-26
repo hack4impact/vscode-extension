@@ -1,0 +1,59 @@
+{
+  "projectName": "vscode-extension",
+  "projectOwner": "hack4impact",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "types": {
+    "doc": {
+      "symbol": "📖",
+      "description": "Documentation",
+      "link": "https://github.com/<%= options.projectOwner %>/<%= options.projectName %>/commits?author=<%= contributor.login %>"
+    },
+    "tool": {
+      "symbol": "🔧",
+      "description": "Tools",
+      "link": "https://github.com/<%= options.projectOwner %>/<%= options.projectName %>/commits?author=<%= contributor.login %>"
+    }
+  },
+  "contributors": [
+    {
+      "login": "YashTotale",
+      "name": "Yash Totale",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30784592?v=4",
+      "profile": "https://github.com/YashTotale",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
+    },
+    {
+      "login": "Holben888",
+      "name": "Benjamin Holmes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31811199?v=4",
+      "profile": "https://bholmes.dev/",
+      "contributions": [
+        "mentoring",
+        "ideas",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "eric-newcomer",
+      "name": "Eric Newcomer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20120289?v=4",
+      "profile": "https://www.linkedin.com/in/eric-newcomer/",
+      "contributions": [
+        "mentoring",
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

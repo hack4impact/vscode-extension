@@ -19,6 +19,7 @@
   - [Create GitIgnore Template](#create-gitignore-template)
   - [Create Changelog Template](#create-changelog-template)
   - [Create License Template](#create-license-template)
+- [Contributors](#contributors)
 
 ## Installation
 
@@ -136,6 +137,28 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `LICENSE.md` file should be created
 - Creates a boilerplate `LICENSE.md` file
+
+## Contributors
+
+Project Contributors ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/YashTotale"><img src="https://avatars.githubusercontent.com/u/30784592?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Totale</b></sub></a><br /><a href="https://github.com/hack4impact/vscode-extension/commits?author=YashTotale" title="Code">💻</a> <a href="#ideas-YashTotale" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/hack4impact/vscode-extension/commits?author=YashTotale" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://bholmes.dev/"><img src="https://avatars.githubusercontent.com/u/31811199?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Benjamin Holmes</b></sub></a><br /><a href="#mentoring-Holben888" title="Mentoring">🧑‍🏫</a> <a href="#ideas-Holben888" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-Holben888" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/eric-newcomer/"><img src="https://avatars.githubusercontent.com/u/20120289?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eric Newcomer</b></sub></a><br /><a href="#mentoring-eric-newcomer" title="Mentoring">🧑‍🏫</a> <a href="#projectManagement-eric-newcomer" title="Project Management">📆</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 <!-- Start Reference Links -->
 
