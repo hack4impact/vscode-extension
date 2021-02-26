@@ -1,22 +1,21 @@
 // Externals
-import { Uri, window } from "vscode";
+import { ExtensionContext, Uri, window } from "vscode";
 
 // Internals
-import { BaseCommand, getSingleFolder } from "../helpers";
-import SingleTemplate from "./single-template";
+import BaseCommand from "../base-command";
+import { getSingleFolder } from "../helpers";
 import allTemplates from "./index";
+import SingleTemplate from "./single-template";
 
 class MultiTemplate extends BaseCommand {
   static readonly PLACEHOLDER = "Pick templates to create...";
 
   constructor() {
-    super();
-    this.cmdName = "template.create";
-    this.title = "Create Template Files";
+    super("template.create", "Create Template Files");
   }
 
-  async handler(...args: any[]): Promise<void> {
-    await super.handler(...args);
+  async handler(context: ExtensionContext, ...args: any[]): Promise<void> {
+    await super.handler(context, ...args);
 
     const picked = await this.showTemplateQuickPick();
 

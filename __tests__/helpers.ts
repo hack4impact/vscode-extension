@@ -1,3 +1,5 @@
+import { ExtensionContext } from "vscode";
+
 export const checkArray = <T = unknown>(expected: T[], actual: T[]): void => {
   expect(actual.length).toEqual(expected.length);
 
@@ -25,3 +27,5 @@ export const checkObject = <T = unknown>(
 export const checkIfObjectLiteral = (obj: Record<string, unknown>): void => {
   expect(!!obj && obj.constructor === Object).toBe(true);
 };
+
+export const mockExtensionContext = {} as ExtensionContext;

@@ -6,7 +6,7 @@ import {
 import { window } from "../../__mocks__/vscode";
 
 describe("Create Command Name", () => {
-  test("Without prepend", () => {
+  test("With prepend", () => {
     const cmdName = "test.command";
 
     const actual = createCommandName(cmdName);
@@ -15,7 +15,7 @@ describe("Create Command Name", () => {
     expect(actual).toStrictEqual(expected);
   });
 
-  test("With prepend", () => {
+  test("Without prepend", () => {
     const cmdName = "hack4impact.test.command";
 
     const actual = createCommandName(cmdName);
@@ -25,7 +25,7 @@ describe("Create Command Name", () => {
 });
 
 describe("Create Command Title", () => {
-  test("Without prepend", () => {
+  test("With prepend", () => {
     const cmdName = "Command";
 
     const actual = createCommandTitle(cmdName);
@@ -34,7 +34,7 @@ describe("Create Command Title", () => {
     expect(actual).toStrictEqual(expected);
   });
 
-  test("With prepend", () => {
+  test("Without prepend", () => {
     const cmdName = "Hack4Impact: Command";
 
     const actual = createCommandTitle(cmdName);

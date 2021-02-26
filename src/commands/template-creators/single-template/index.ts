@@ -1,11 +1,12 @@
 // Externals
-import { env, window, Uri, workspace } from "vscode";
+import { env, window, Uri, workspace, ExtensionContext } from "vscode";
 import { join } from "path";
 import { promises } from "fs";
 import { writeFile as writeJSONFile } from "jsonfile";
 
 // Internals
-import { BaseCommand, getSingleFolder } from "../../helpers";
+import BaseCommand from "../../base-command";
+import { getSingleFolder } from "../../helpers";
 
 const { writeFile } = promises;
 
@@ -32,8 +33,11 @@ export default class SingleTemplate extends BaseCommand {
   onSuccess: string;
 
   constructor(params: SingleTemplateParams) {
-    super();
     const { name, templateFileName, template, docsLink, isConfig } = params;
+    super(
+      `template.create.${name}${isConfig ? "Config" : ""}`,
+      `Create ${name}${isConfig ? " Configuration" : ""} Template`
+    );
 
     this.name = name;
     this.templateFileName = templateFileName;
@@ -41,15 +45,13 @@ export default class SingleTemplate extends BaseCommand {
     this.docsLink = docsLink;
     this.isConfig = isConfig;
 
-    this.title = `Create ${name}${isConfig ? " Configuration" : ""} Template`;
-    this.cmdName = `template.create.${name}${isConfig ? "Config" : ""}`;
     this.onSuccess = `Created ${name}${
       isConfig ? " Configuration" : ""
     } Template!`;
   }
 
-  async handler(...args: any[]): Promise<void> {
-    await super.handler(...args);
+  async handler(context: ExtensionContext, ...args: any[]): Promise<void> {
+    await super.handler(context, ...args);
     const folderResult = await getSingleFolder();
 
     if (folderResult) {

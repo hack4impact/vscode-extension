@@ -2,6 +2,7 @@
 import { Uri } from "vscode";
 
 // Internals
+import { mockExtensionContext } from "../../helpers";
 import { window } from "../../../__mocks__/vscode";
 import TemplateCreators, {
   MultiTemplate,
@@ -28,7 +29,7 @@ describe("Handler Method", () => {
   test("With no templates selected", async () => {
     quickPickSpy.mockReturnValue(Promise.resolve(undefined));
 
-    await multiTemplate.handler();
+    await multiTemplate.handler(mockExtensionContext);
 
     checkQuickPickSpy();
 
@@ -44,7 +45,7 @@ describe("Handler Method", () => {
     quickPickSpy.mockReturnValue(Promise.resolve(picked));
     folderSpy.mockReturnValue(Promise.resolve(undefined));
 
-    await multiTemplate.handler();
+    await multiTemplate.handler(mockExtensionContext);
 
     checkQuickPickSpy();
     checkFolderSpy();
@@ -65,7 +66,7 @@ describe("Handler Method", () => {
     createFilesSpy.mockReturnValue(Promise.resolve(createdFiles));
     successMessageSpy.mockReturnValue(Promise.resolve([]));
 
-    await multiTemplate.handler();
+    await multiTemplate.handler(mockExtensionContext);
 
     checkQuickPickSpy();
     checkFolderSpy();

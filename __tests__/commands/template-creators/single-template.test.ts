@@ -4,11 +4,12 @@ import { join } from "path";
 import { Uri as VSCodeUri } from "vscode";
 
 // Internals
+import { mockExtensionContext } from "../../helpers";
+import { OUTPUT_FOLDER_PATH } from "../../constants";
 import { env, Uri, window, workspace } from "../../../__mocks__/vscode";
 import TemplateCreators from "../../../src/commands/template-creators";
 import SingleTemplate from "../../../src/commands/template-creators/single-template";
 import * as helpers from "../../../src/commands/helpers";
-import { OUTPUT_FOLDER_PATH } from "../../constants";
 
 for (const Creator of TemplateCreators)
   describe(Creator.name, () => {
@@ -30,7 +31,7 @@ for (const Creator of TemplateCreators)
       test("With no folder selected", async () => {
         folderSpy.mockReturnValue(Promise.resolve(undefined));
 
-        await Creator.handler();
+        await Creator.handler(mockExtensionContext);
 
         checkFolderSpy();
 
@@ -46,7 +47,7 @@ for (const Creator of TemplateCreators)
         writeTemplateSpy.mockReturnValue(Promise.resolve(filePath));
         successMessageSpy.mockReturnValue(Promise.resolve());
 
-        await Creator.handler();
+        await Creator.handler(mockExtensionContext);
 
         checkFolderSpy();
 

@@ -1,10 +1,13 @@
+// Externals
 import { commands, ExtensionContext } from "vscode";
+
+// Internals
 import Commands from "./commands";
 
 export function activate(context: ExtensionContext): void {
   Commands.forEach((Command) => {
     const disposable = commands.registerCommand(Command.cmdName, (...args) =>
-      Command.handler(...args)
+      Command.handler(context, ...args)
     );
     context.subscriptions.push(disposable);
   });
