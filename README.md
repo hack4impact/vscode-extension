@@ -61,6 +61,8 @@
 - Shows a [File Picker] Dialog to pick the folder where the templates should be created
 - Creates the templates with Hack4Impact's recommended configuration
 
+---
+
 ### Create ESLint Configuration Template
 
 #### Command Id
@@ -71,6 +73,8 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `.eslintrc.json` file should be created
 - Creates a `.eslintrc.json` file with Hack4Impact's recommended configuration
+
+---
 
 ### Create Prettier Configuration Template
 
@@ -83,6 +87,8 @@
 - Shows a [File Picker] Dialog to pick the folder where a `.prettierrc.json` file should be created
 - Creates a `.prettierrc.json` file with Hack4Impact's recommended configuration
 
+---
+
 ### Create MarkdownLint Configuration Template
 
 #### Command Id
@@ -93,6 +99,8 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `.markdownlint.json` file should be created
 - Creates a `.markdownlint.json` file with Hack4Impact's recommended configuration
+
+---
 
 ### Create EditorConfig Configuration Template
 
@@ -105,6 +113,8 @@
 - Shows a [File Picker] Dialog to pick the folder where a `.editorconfig` file should be created
 - Creates a `.editorconfig` file with Hack4Impact's recommended configuration
 
+---
+
 ### Create GitIgnore Template
 
 #### Command Id
@@ -116,6 +126,8 @@
 - Shows a [File Picker] Dialog to pick the folder where a `.gitignore` file should be created
 - Creates a boilerplate `.gitignore` file
 
+---
+
 ### Create Changelog Template
 
 #### Command Id
@@ -126,6 +138,8 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `CHANGELOG.md` file should be created
 - Creates a boilerplate `CHANGELOG.md` file
+
+---
 
 ### Create License Template
 
