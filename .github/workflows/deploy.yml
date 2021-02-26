@@ -26,6 +26,9 @@ jobs:
       - name: Test Project
         run: npm test
 
+      - name: Check Links
+        run: npm run check-links
+
       - name: Deploy Extension
         run: npm run deploy
         env:
