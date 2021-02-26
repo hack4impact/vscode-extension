@@ -10,6 +10,8 @@
 
 .all-contributorsrc linguist-language=JSON
 
+.linkinatorrc linguist-language=JSON
+
 .snyk linguist-language=YAML
 
 .vscodeignore linguist-language=Ignore-List

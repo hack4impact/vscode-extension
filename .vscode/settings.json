@@ -18,7 +18,8 @@
 
     ".snyk": "yaml",
     ".imgbotconfig": "json",
-    ".all-contributorsrc": "json"
+    ".all-contributorsrc": "json",
+    ".linkinatorrc": "json"
   },
   "files.exclude": {
     "out": false
