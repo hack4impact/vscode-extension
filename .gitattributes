@@ -1,3 +1,4 @@
+.eslintrc linguist-language=JSON
 .prettierrc linguist-language=JSON
 
 .lintstagedrc linguist-language=JSON
@@ -6,6 +7,8 @@
 .markdownlintignore linguist-language=Ignore-List
 
 .imgbotconfig linguist-language=JSON
+
+.all-contributorsrc linguist-language=JSON
 
 .snyk linguist-language=YAML
 
