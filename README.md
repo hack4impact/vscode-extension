@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-    <a href="https://hack4impact.org/"><img src="static/rotating-icon.gif" alt="Hack4Impact Icon" width="100"></a>
+    <a href="https://hack4impact.org/"><img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/rotating-icon.gif" alt="Hack4Impact Icon" width="100"></a>
   <br>
   <b><a href="https://hack4impact.org/">Hack4Impact</a>'s VS Code Recommendations</b>
 </h1>
@@ -40,12 +40,12 @@
 
 ## Included Extensions
 
-| Name             | Icon                                                                               | Links                                                       |
-| ---------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| **ESLint**       | <img src="static/pack-icons/eslint.png" alt="ESLint Icon" width="100">             | [ESLint - Marketplace]<br>[ESLint - Repository]             |
-| **Prettier**     | <img src="static/pack-icons/prettier.png" alt="Prettier Icon" width="100">         | [Prettier - Marketplace]<br>[Prettier - Repository]         |
-| **MarkdownLint** | <img src="static/pack-icons/markdownlint.png" alt="MarkdownLint Icon" width="100"> | [MarkdownLint - Marketplace]<br>[MarkdownLint - Repository] |
-| **EditorConfig** | <img src="static/pack-icons/editorconfig.png" alt="EditorConfig Icon" width="100"> | [EditorConfig - Marketplace]<br>[EditorConfig - Repository] |
+| Name             | Icon                                                                                                                                                   | Links                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **ESLint**       | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/eslint.png" alt="ESLint Icon" width="100">             | [ESLint - Marketplace]<br>[ESLint - Repository]             |
+| **Prettier**     | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/prettier.png" alt="Prettier Icon" width="100">         | [Prettier - Marketplace]<br>[Prettier - Repository]         |
+| **MarkdownLint** | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/markdownlint.png" alt="MarkdownLint Icon" width="100"> | [MarkdownLint - Marketplace]<br>[MarkdownLint - Repository] |
+| **EditorConfig** | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/editorconfig.png" alt="EditorConfig Icon" width="100"> | [EditorConfig - Marketplace]<br>[EditorConfig - Repository] |
 
 ## Commands
 
