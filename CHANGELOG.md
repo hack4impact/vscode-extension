@@ -7,16 +7,26 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/), and this 
 ## Table of Contents <!-- omit in toc -->
 
 - [Unreleased](#unreleased)
-- [[0.1.2] - (2020-02-26)](#012---2020-02-26)
+- [[0.1.3] - (2020-02-27)](#013---2020-02-27)
   - [Added](#added)
+- [[0.1.2] - (2020-02-26)](#012---2020-02-26)
+  - [Added](#added-1)
 - [[0.1.1] - (2020-02-26)](#011---2020-02-26)
   - [Fixed](#fixed)
 - [[0.1.0] - (2020-02-25)](#010---2020-02-25)
-  - [Added](#added-1)
+  - [Added](#added-2)
   - [Changed](#changed)
 - [[0.0.1] - (2020-02-25)](#001---2020-02-25)
 
 ## Unreleased
+
+---
+
+## [0.1.3] - (2020-02-27)
+
+### Added
+
+- Demos in [README]
 
 ---
 
