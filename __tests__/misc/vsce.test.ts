@@ -44,4 +44,4 @@ test("Correct files are packaged", async () => {
   ];
 
   checkArray(expected, actual);
-});
+}, 15000);
