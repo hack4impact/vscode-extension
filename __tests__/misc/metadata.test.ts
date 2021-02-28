@@ -135,3 +135,25 @@ test("Contains activation events", () => {
 
   expect(Array.isArray(activationEvents)).toBe(true);
 });
+
+test("Correct keywords", () => {
+  const keywords = pkg.keywords;
+
+  checkArray(
+    [
+      "eslint",
+      "templates",
+      "vscode",
+      "prettier",
+      "vscode-extension",
+      "editorconfig",
+      "markdownlint",
+      "linters",
+      "formatters",
+      "configuration",
+      "extension-pack",
+      "hack4impact",
+    ],
+    keywords
+  );
+});
