@@ -62,6 +62,15 @@
 - Shows a [File Picker] Dialog to pick the folder where the templates should be created
 - Creates the templates with Hack4Impact's recommended configuration
 
+#### Demo
+
+<details>
+<summary>Create Template Files Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-template-files.gif" alt="Create Template Files Demo">
+
+</details>
+
 ---
 
 ### Create ESLint Configuration Template
@@ -74,6 +83,15 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `.eslintrc.json` file should be created
 - Creates a `.eslintrc.json` file with Hack4Impact's recommended configuration
+
+#### Demo
+
+<details>
+<summary>Create ESLint Configuration Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-eslint-config-template.gif" alt="Create ESLint Configuration Template Demo">
+
+</details>
 
 ---
 
@@ -88,6 +106,15 @@
 - Shows a [File Picker] Dialog to pick the folder where a `.prettierrc.json` file should be created
 - Creates a `.prettierrc.json` file with Hack4Impact's recommended configuration
 
+#### Demo
+
+<details>
+<summary>Create Prettier Configuration Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-prettier-config-template.gif" alt="Create Prettier Configuration Template Demo">
+
+</details>
+
 ---
 
 ### Create MarkdownLint Configuration Template
@@ -100,6 +127,15 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `.markdownlint.json` file should be created
 - Creates a `.markdownlint.json` file with Hack4Impact's recommended configuration
+
+#### Demo
+
+<details>
+<summary>Create MarkdownLint Configuration Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-markdownlint-config-template.gif" alt="Create MarkdownLint Configuration Template Demo">
+
+</details>
 
 ---
 
@@ -114,6 +150,15 @@
 - Shows a [File Picker] Dialog to pick the folder where a `.editorconfig` file should be created
 - Creates a `.editorconfig` file with Hack4Impact's recommended configuration
 
+#### Demo
+
+<details>
+<summary>Create EditorConfig Configuration Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-editorconfig-config-template.gif" alt="Create EditorConfig Configuration Template Demo">
+
+</details>
+
 ---
 
 ### Create GitIgnore Template
@@ -126,6 +171,15 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `.gitignore` file should be created
 - Creates a boilerplate `.gitignore` file
+
+#### Demo
+
+<details>
+<summary>Create GitIgnore Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-gitignore-template.gif" alt="Create GitIgnore Template Demo">
+
+</details>
 
 ---
 
@@ -140,6 +194,15 @@
 - Shows a [File Picker] Dialog to pick the folder where a `CHANGELOG.md` file should be created
 - Creates a boilerplate `CHANGELOG.md` file
 
+#### Demo
+
+<details>
+<summary>Create Changelog Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-changelog-template.gif" alt="Create Changelog Template Demo">
+
+</details>
+
 ---
 
 ### Create License Template
@@ -152,6 +215,15 @@
 
 - Shows a [File Picker] Dialog to pick the folder where a `LICENSE.md` file should be created
 - Creates a boilerplate `LICENSE.md` file
+
+#### Demo
+
+<details>
+<summary>Create License Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-license-template.gif" alt="Create License Template Demo">
+
+</details>
 
 ## Contributors
 
