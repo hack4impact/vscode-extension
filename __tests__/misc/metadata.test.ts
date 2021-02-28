@@ -24,6 +24,16 @@ test("Valid version", () => {
   expect(valid(pkg.version)).not.toBeNull();
 });
 
+test("Correct main", () => {
+  expect(pkg.main).toBe("./dist/extension.js");
+});
+
+test("Correct homepage", () => {
+  expect(pkg.homepage).toBe(
+    "https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations"
+  );
+});
+
 test("Correct icon", () => {
   expect(pkg.icon).toBe("static/hack4impact-icon.png");
 });
