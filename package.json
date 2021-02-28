@@ -3,7 +3,7 @@
   "publisher": "hack4impact",
   "displayName": "Hack4Impact's Recommendations",
   "description": "Hack4Impact's Recommended Extensions and Templates for Quality Project Development",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./dist/extension.js",
   "icon": "static/hack4impact-icon.png",
   "license": "MIT",
