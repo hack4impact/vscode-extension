@@ -3,7 +3,7 @@
   "publisher": "hack4impact",
   "displayName": "Hack4Impact's Recommendations",
   "description": "Hack4Impact's Recommended Extensions and Templates for Quality Project Development",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "main": "./dist/extension.js",
   "homepage": "https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations",
   "icon": "static/hack4impact-icon.png",
