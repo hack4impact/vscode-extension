@@ -54,7 +54,7 @@
 
 #### Command Id
 
-`hack4impact.template.create`
+`hack4impact.templates.create`
 
 #### Description
 
@@ -77,7 +77,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.ESLintConfig`
+`hack4impact.templates.create.ESLintConfig`
 
 #### Description
 
@@ -99,7 +99,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.PrettierConfig`
+`hack4impact.templates.create.PrettierConfig`
 
 #### Description
 
@@ -121,7 +121,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.MarkdownLintConfig`
+`hack4impact.templates.create.MarkdownLintConfig`
 
 #### Description
 
@@ -143,7 +143,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.EditorConfigConfig`
+`hack4impact.templates.create.EditorConfigConfig`
 
 #### Description
 
@@ -165,7 +165,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.GitIgnore`
+`hack4impact.templates.create.GitIgnore`
 
 #### Description
 
@@ -187,7 +187,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.Changelog`
+`hack4impact.templates.create.Changelog`
 
 #### Description
 
@@ -209,7 +209,7 @@
 
 #### Command Id
 
-`hack4impact.template.create.License`
+`hack4impact.templates.create.License`
 
 #### Description
 

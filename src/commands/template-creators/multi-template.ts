@@ -11,7 +11,7 @@ class MultiTemplate extends BaseCommand {
   static readonly PLACEHOLDER = "Pick templates to create...";
 
   constructor() {
-    super("template.create", "Create Template Files");
+    super("templates.create", "Create Template Files");
   }
 
   async handler(context: ExtensionContext, ...args: any[]): Promise<void> {

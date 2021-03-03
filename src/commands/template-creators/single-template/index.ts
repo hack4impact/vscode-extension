@@ -35,7 +35,7 @@ export default class SingleTemplate extends BaseCommand {
   constructor(params: SingleTemplateParams) {
     const { name, templateFileName, template, docsLink, isConfig } = params;
     super(
-      `template.create.${name}${isConfig ? "Config" : ""}`,
+      `templates.create.${name}${isConfig ? "Config" : ""}`,
       `Create ${name}${isConfig ? " Configuration" : ""} Template`
     );
 
