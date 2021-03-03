@@ -37,6 +37,12 @@ jobs:
         with:
           fail_ci_if_error: true
 
+      - name: Deploy Coverage to GH Pages
+        uses: JamesIves/github-pages-deploy-action@v4.0.0
+        with:
+          branch: gh-pages
+          folder: coverage/lcov-report
+
       - name: Check Links
         run: npm run check-links
 
