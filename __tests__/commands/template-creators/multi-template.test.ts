@@ -27,15 +27,20 @@ describe("Handler Method", () => {
   };
 
   test("With no templates selected", async () => {
-    quickPickSpy.mockReturnValue(Promise.resolve(undefined));
+    const noTemplateValues = [undefined, []];
 
-    await multiTemplate.handler(mockExtensionContext);
+    for (const noTemplates of noTemplateValues) {
+      quickPickSpy.mockReturnValue(Promise.resolve(noTemplates));
 
-    checkQuickPickSpy();
+      await multiTemplate.handler(mockExtensionContext);
 
-    expect(folderSpy).toHaveBeenCalledTimes(0);
-    expect(createFilesSpy).toHaveBeenCalledTimes(0);
-    expect(successMessageSpy).toHaveBeenCalledTimes(0);
+      checkQuickPickSpy();
+
+      expect(folderSpy).toHaveBeenCalledTimes(0);
+      expect(createFilesSpy).toHaveBeenCalledTimes(0);
+      expect(successMessageSpy).toHaveBeenCalledTimes(0);
+      quickPickSpy.mockClear();
+    }
   });
 
   test("With no folder selected", async () => {

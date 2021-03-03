@@ -19,7 +19,7 @@ class MultiTemplate extends BaseCommand {
 
     const picked = await this.showTemplateQuickPick();
 
-    if (picked) {
+    if (picked && picked.length) {
       const folder = await getSingleFolder();
 
       if (folder) {
