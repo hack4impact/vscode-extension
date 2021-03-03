@@ -46,10 +46,10 @@
 
 | Name             | Icon                                                                                                                                                   | Links                                                       |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| **ESLint**       | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/eslint.svg" alt="ESLint Icon" width="100">             | [ESLint - Marketplace]<br>[ESLint - Repository]             |
-| **Prettier**     | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/prettier.svg" alt="Prettier Icon" width="100">         | [Prettier - Marketplace]<br>[Prettier - Repository]         |
-| **MarkdownLint** | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/markdownlint.svg" alt="MarkdownLint Icon" width="100"> | [MarkdownLint - Marketplace]<br>[MarkdownLint - Repository] |
-| **EditorConfig** | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/editorconfig.svg" alt="EditorConfig Icon" width="100"> | [EditorConfig - Marketplace]<br>[EditorConfig - Repository] |
+| **ESLint**       | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/eslint.png" alt="ESLint Icon" width="100">             | [ESLint - Marketplace]<br>[ESLint - Repository]             |
+| **Prettier**     | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/prettier.png" alt="Prettier Icon" width="100">         | [Prettier - Marketplace]<br>[Prettier - Repository]         |
+| **MarkdownLint** | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/markdownlint.png" alt="MarkdownLint Icon" width="100"> | [MarkdownLint - Marketplace]<br>[MarkdownLint - Repository] |
+| **EditorConfig** | <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/pack-icons/editorconfig.png" alt="EditorConfig Icon" width="100"> | [EditorConfig - Marketplace]<br>[EditorConfig - Repository] |
 
 ## Commands
 
