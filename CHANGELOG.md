@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/), and this 
 ## Table of Contents <!-- omit in toc -->
 
 - [Unreleased](#unreleased)
+- [[0.2.0] - (2020-03-02)](#020---2020-03-02)
+  - [Changed](#changed)
 - [[0.1.5] - (2020-02-27)](#015---2020-02-27)
   - [Added](#added)
 - [[0.1.4] - (2020-02-27)](#014---2020-02-27)
@@ -19,10 +21,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/), and this 
   - [Fixed](#fixed)
 - [[0.1.0] - (2020-02-25)](#010---2020-02-25)
   - [Added](#added-4)
-  - [Changed](#changed)
+  - [Changed](#changed-1)
 - [[0.0.1] - (2020-02-25)](#001---2020-02-25)
 
 ## Unreleased
+
+---
+
+## [0.2.0] - (2020-03-02)
+
+### Changed
+
+- Command IDs
 
 ---
 
