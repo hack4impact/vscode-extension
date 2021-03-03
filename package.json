@@ -82,6 +82,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "preversion": "npm run compile && npm test",
     "version:patch": "npm version patch -m 'v%s'",
     "version:minor": "npm version minor -m 'v%s'",
