@@ -34,3 +34,6 @@ jobs:
 
       - name: Check Links
         run: npm run check-links
+
+      - name: Show Extension Data
+        run: npm run show-data

@@ -102,7 +102,8 @@
     "contributors:check": "all-contributors check",
     "check-links": "bash scripts/check-links.sh",
     "recreate-releases": "ts-node scripts/recreate-releases.ts",
-    "create-package-json": "ts-node scripts/create-package-json.ts"
+    "create-package-json": "ts-node scripts/create-package-json.ts",
+    "show-data": "vsce show hack4impact.h4i-recommendations"
   },
   "dependencies": {
     "jsonfile": "^6.1.0"
