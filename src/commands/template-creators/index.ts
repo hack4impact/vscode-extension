@@ -7,6 +7,7 @@ import MarkdownLint from "./single-template/config/markdownlint";
 import GitIgnore from "./single-template/misc/gitignore";
 import Changelog from "./single-template/misc/changelog";
 import License from "./single-template/misc/license";
+import CodeOwners from "./single-template/misc/codeowners";
 
 const allTemplates = [
   ESLint,
@@ -16,6 +17,7 @@ const allTemplates = [
   GitIgnore,
   Changelog,
   License,
+  CodeOwners,
 ];
 
 export default allTemplates;

@@ -69,7 +69,16 @@ describe("Correct repository", () => {
 test("Correct categories", () => {
   const categories = pkg.categories;
 
-  checkArray(["Extension Packs", "Linters", "Formatters"], categories);
+  checkArray(
+    [
+      "Extension Packs",
+      "Linters",
+      "Formatters",
+      "Programming Languages",
+      "Other",
+    ],
+    categories
+  );
 });
 
 describe("Correct bugs", () => {
@@ -161,6 +170,7 @@ test("Correct keywords", () => {
       "formatters",
       "configuration",
       "extension-pack",
+      "codeowners",
       "hack4impact",
     ],
     keywords

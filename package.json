@@ -19,7 +19,9 @@
   "categories": [
     "Extension Packs",
     "Linters",
-    "Formatters"
+    "Formatters",
+    "Programming Languages",
+    "Other"
   ],
   "bugs": {
     "url": "https://github.com/hack4impact/vscode-extension/issues"
@@ -41,7 +43,8 @@
     "onCommand:hack4impact.templates.create.EditorConfigConfig",
     "onCommand:hack4impact.templates.create.GitIgnore",
     "onCommand:hack4impact.templates.create.Changelog",
-    "onCommand:hack4impact.templates.create.License"
+    "onCommand:hack4impact.templates.create.License",
+    "onCommand:hack4impact.templates.create.CodeOwners"
   ],
   "contributes": {
     "commands": [
@@ -76,6 +79,10 @@
       {
         "command": "hack4impact.templates.create.License",
         "title": "Hack4Impact: Create License Template"
+      },
+      {
+        "command": "hack4impact.templates.create.CodeOwners",
+        "title": "Hack4Impact: Create CodeOwners Template"
       }
     ],
     "keybindings": [
@@ -125,6 +132,12 @@
         "command": "hack4impact.templates.create.License",
         "key": "ctrl+h l",
         "mac": "cmd+h l",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
+      },
+      {
+        "command": "hack4impact.templates.create.CodeOwners",
+        "key": "ctrl+h o",
+        "mac": "cmd+h o",
         "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       }
     ],
@@ -239,6 +252,7 @@
     "formatters",
     "configuration",
     "extension-pack",
+    "codeowners",
     "hack4impact"
   ]
 }

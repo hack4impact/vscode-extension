@@ -23,6 +23,7 @@
   - [Create GitIgnore Template](#create-gitignore-template)
   - [Create Changelog Template](#create-changelog-template)
   - [Create License Template](#create-license-template)
+  - [Create CodeOwners Template](#create-codeowners-template)
 - [Configuration](#configuration)
   - [Keybindings](#keybindings)
 - [Extras!](#extras)
@@ -279,6 +280,34 @@
 - **Mac**: `cmd+h l`
 
 - **Windows/Linux**: `ctrl+h l`
+
+---
+
+### Create CodeOwners Template
+
+#### Command Id
+
+`hack4impact.templates.create.CodeOwners`
+
+#### Description
+
+- Shows a [File Picker] Dialog to pick the folder where a `CODEOWNERS` file should be created
+- Creates a boilerplate `CODEOWNERS` file
+
+<!-- #### Demo
+
+<details>
+<summary>Create CodeOwners Template Demo</summary>
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-codeowners-template.gif" alt="Create CodeOwners Template Demo">
+
+</details> -->
+
+#### Keybinding
+
+- **Mac**: `cmd+h o`
+
+- **Windows/Linux**: `ctrl+h o`
 
 ## Configuration
 
