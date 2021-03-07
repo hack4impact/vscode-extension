@@ -137,7 +137,20 @@
           "default": false
         }
       }
-    }
+    },
+    "languages": [
+      {
+        "id": "codeowners",
+        "filenames": [
+          "CODEOWNERS"
+        ],
+        "aliases": [
+          "CODEOWNERS",
+          "codeowners"
+        ],
+        "configuration": "./languages/codeowners.language-configuration.json"
+      }
+    ]
   },
   "scripts": {
     "test": "jest",

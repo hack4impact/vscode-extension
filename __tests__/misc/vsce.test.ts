@@ -7,11 +7,6 @@ import recursive from "recursive-readdir";
 import { checkArray } from "../helpers";
 import { ROOT_FOLDER_PATH } from "../constants";
 
-const getStaticFiles = async (): Promise<string[]> => {
-  const absoluteStaticPaths = await recursive(join(ROOT_FOLDER_PATH, "static"));
-  return absoluteStaticPaths.map((file) => relative(ROOT_FOLDER_PATH, file));
-};
-
 const getDistFiles = async (): Promise<string[]> => {
   let distFiles: string[];
   try {
@@ -26,11 +21,24 @@ const getDistFiles = async (): Promise<string[]> => {
   return distFiles;
 };
 
+const getStaticFiles = async (): Promise<string[]> => {
+  const absoluteStaticPaths = await recursive(join(ROOT_FOLDER_PATH, "static"));
+  return absoluteStaticPaths.map((file) => relative(ROOT_FOLDER_PATH, file));
+};
+
+const getLanguageFiles = async (): Promise<string[]> => {
+  const absoluteStaticPaths = await recursive(
+    join(ROOT_FOLDER_PATH, "languages")
+  );
+  return absoluteStaticPaths.map((file) => relative(ROOT_FOLDER_PATH, file));
+};
+
 test("Correct files are packaged", async () => {
-  const [actual, distFiles, staticFiles] = await Promise.all([
+  const [actual, distFiles, staticFiles, languageFiles] = await Promise.all([
     listFiles({ packageManager: PackageManager.Npm }),
     getDistFiles(),
     getStaticFiles(),
+    getLanguageFiles(),
   ]);
 
   const expected = [
@@ -39,8 +47,9 @@ test("Correct files are packaged", async () => {
     "LICENSE.md",
     "package.json",
     "README.md",
-    ...staticFiles,
     ...distFiles,
+    ...staticFiles,
+    ...languageFiles,
   ];
 
   checkArray(expected, actual);
