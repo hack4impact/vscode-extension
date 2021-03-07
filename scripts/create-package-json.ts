@@ -19,6 +19,7 @@ interface Keybinding {
   key: string;
   mac: string;
   command: string;
+  when: string;
 }
 
 const createPackageJson = async () => {
@@ -32,6 +33,7 @@ const createPackageJson = async () => {
       command: command.cmdName,
       key: `ctrl+h ${command.keybinding}`,
       mac: `cmd+h ${command.keybinding}`,
+      when: "!config.hack4impact.recommendations.keybindings.disableAll",
     });
     newActivationEvents.push(`onCommand:${command.cmdName}`);
   });

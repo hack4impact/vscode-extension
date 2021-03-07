@@ -82,44 +82,62 @@
       {
         "command": "hack4impact.templates.create",
         "key": "ctrl+h t",
-        "mac": "cmd+h t"
+        "mac": "cmd+h t",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.ESLintConfig",
         "key": "ctrl+h e",
-        "mac": "cmd+h e"
+        "mac": "cmd+h e",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.PrettierConfig",
         "key": "ctrl+h p",
-        "mac": "cmd+h p"
+        "mac": "cmd+h p",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.MarkdownLintConfig",
         "key": "ctrl+h m",
-        "mac": "cmd+h m"
+        "mac": "cmd+h m",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.EditorConfigConfig",
         "key": "ctrl+h d",
-        "mac": "cmd+h d"
+        "mac": "cmd+h d",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.GitIgnore",
         "key": "ctrl+h g",
-        "mac": "cmd+h g"
+        "mac": "cmd+h g",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.Changelog",
         "key": "ctrl+h c",
-        "mac": "cmd+h c"
+        "mac": "cmd+h c",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       },
       {
         "command": "hack4impact.templates.create.License",
         "key": "ctrl+h l",
-        "mac": "cmd+h l"
+        "mac": "cmd+h l",
+        "when": "!config.hack4impact.recommendations.keybindings.disableAll"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Hack4Impact's Recommendations",
+      "properties": {
+        "hack4impact.recommendations.keybindings.disableAll": {
+          "type": "boolean",
+          "description": "Controls whether all keybindings are disabled",
+          "default": false
+        }
+      }
+    }
   },
   "scripts": {
     "test": "jest",

@@ -129,6 +129,12 @@ test("Contains contributes", () => {
   checkIfObjectLiteral(contributes);
   expect(Array.isArray(contributes.commands)).toBe(true);
   expect(Array.isArray(contributes.keybindings)).toBe(true);
+
+  const config = contributes.configuration;
+
+  checkIfObjectLiteral(config);
+  expect(config.title).toBe("Hack4Impact's Recommendations");
+  checkIfObjectLiteral(config.properties);
 });
 
 test("Contains activation events", () => {
