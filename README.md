@@ -294,14 +294,14 @@
 - Shows a [File Picker] Dialog to pick the folder where a `CODEOWNERS` file should be created
 - Creates a boilerplate `CODEOWNERS` file
 
-<!-- #### Demo
+#### Demo
 
 <details>
 <summary>Create CodeOwners Template Demo</summary>
 
 <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-codeowners-template.gif" alt="Create CodeOwners Template Demo">
 
-</details> -->
+</details>
 
 #### Keybinding
 

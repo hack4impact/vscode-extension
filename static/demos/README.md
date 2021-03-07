@@ -31,3 +31,7 @@
 ## Create License Template
 
 <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-license-template.gif" alt="Create License Template Demo">
+
+## Create CodeOwners Template
+
+<img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-codeowners-template.gif" alt="Create CodeOwners Template Demo">
