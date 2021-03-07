@@ -25,6 +25,8 @@
   - [Create License Template](#create-license-template)
 - [Configuration](#configuration)
   - [Keybindings](#keybindings)
+- [Extras!](#extras)
+  - [CODEOWNERS File Support](#codeowners-file-support)
 - [Contributors](#contributors)
 
 ## Installation
@@ -288,6 +290,22 @@
 - **Key**: `hack4impact.recommendations.keybindings.disableAll`
 - **Type**: `boolean`
 - **Default**: `false`
+
+## Extras!
+
+### CODEOWNERS File Support
+
+#### What is a CODEOWNERS file?
+
+[GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners):
+
+> You can use a CODEOWNERS file to define individuals or teams that are responsible for code in a repository.
+
+[Sample CODEOWNERS file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)
+
+#### What does Hack4Impact provide?
+
+VS Code currently does not have syntax highlighting and language configuration for CODEOWNERS files. This extension provides both!
 
 ## Contributors
 
