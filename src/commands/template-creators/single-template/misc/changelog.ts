@@ -19,4 +19,5 @@ export default new SingleTemplate({
   template,
   docsLink: "https://keepachangelog.com/",
   isConfig: false,
+  keybinding: "c",
 });

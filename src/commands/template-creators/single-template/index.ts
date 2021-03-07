@@ -16,6 +16,7 @@ interface SingleTemplateParams {
   templateFileName: string;
   docsLink: string;
   isConfig: boolean;
+  keybinding: string;
 }
 
 export default class SingleTemplate extends BaseCommand {
@@ -33,10 +34,19 @@ export default class SingleTemplate extends BaseCommand {
   onSuccess: string;
 
   constructor(params: SingleTemplateParams) {
-    const { name, templateFileName, template, docsLink, isConfig } = params;
+    const {
+      name,
+      templateFileName,
+      template,
+      docsLink,
+      isConfig,
+      keybinding,
+    } = params;
+
     super(
       `templates.create.${name}${isConfig ? "Config" : ""}`,
-      `Create ${name}${isConfig ? " Configuration" : ""} Template`
+      `Create ${name}${isConfig ? " Configuration" : ""} Template`,
+      keybinding
     );
 
     this.name = name;

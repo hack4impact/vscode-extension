@@ -26,4 +26,5 @@ export default new SingleTemplate({
   template,
   docsLink: "https://git-scm.com/docs/gitignore",
   isConfig: false,
+  keybinding: "g",
 });

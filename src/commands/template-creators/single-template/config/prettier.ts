@@ -19,4 +19,5 @@ export default new SingleTemplate({
   template,
   docsLink: "https://prettier.io/docs/en/configuration.html",
   isConfig: true,
+  keybinding: "p",
 });

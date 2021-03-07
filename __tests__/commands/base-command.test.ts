@@ -8,8 +8,9 @@ import { mockExtensionContext } from "../helpers";
 
 const cmdName = "testcommand";
 const cmdTitle = "Test Command";
+const cmdKeybinding = "Test keybinding";
 
-const baseCommand = new BaseCommand(cmdName, cmdTitle);
+const baseCommand = new BaseCommand(cmdName, cmdTitle, cmdKeybinding);
 
 test("Constructor", () => {
   expect(baseCommand.cmdName).toStrictEqual(createCommandName(cmdName));

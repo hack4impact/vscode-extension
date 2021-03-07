@@ -128,6 +128,7 @@ test("Contains contributes", () => {
 
   checkIfObjectLiteral(contributes);
   expect(Array.isArray(contributes.commands)).toBe(true);
+  expect(Array.isArray(contributes.keybindings)).toBe(true);
 });
 
 test("Contains activation events", () => {

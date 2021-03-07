@@ -26,4 +26,5 @@ export default new SingleTemplate({
   template,
   docsLink: "https://eslint.org/docs/user-guide/configuring/",
   isConfig: true,
+  keybinding: "e",
 });

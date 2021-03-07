@@ -19,4 +19,5 @@ export default new SingleTemplate({
   template,
   docsLink: "https://editorconfig.org/",
   isConfig: true,
+  keybinding: "d",
 });

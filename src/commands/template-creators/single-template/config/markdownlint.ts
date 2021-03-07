@@ -10,4 +10,5 @@ export default new SingleTemplate({
   template,
   docsLink: "https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md",
   isConfig: true,
+  keybinding: "m",
 });

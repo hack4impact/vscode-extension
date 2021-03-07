@@ -15,16 +15,29 @@ interface Command {
   title: string;
 }
 
+interface Keybinding {
+  key: string;
+  mac: string;
+  command: string;
+}
+
 const createPackageJson = async () => {
   const newCommands: Command[] = [];
+  const newKeybindings: Keybinding[] = [];
   const newActivationEvents: string[] = [];
 
   Commands.forEach((command) => {
     newCommands.push({ command: command.cmdName, title: command.title });
+    newKeybindings.push({
+      command: command.cmdName,
+      key: `ctrl+h ${command.keybinding}`,
+      mac: `cmd+h ${command.keybinding}`,
+    });
     newActivationEvents.push(`onCommand:${command.cmdName}`);
   });
 
   pkg.contributes.commands = newCommands;
+  pkg.contributes.keybindings = newKeybindings;
   pkg.activationEvents = newActivationEvents;
 
   const newPackageJson = format(JSON.stringify(pkg), {
