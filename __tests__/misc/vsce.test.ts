@@ -33,12 +33,26 @@ const getLanguageFiles = async (): Promise<string[]> => {
   return absoluteStaticPaths.map((file) => relative(ROOT_FOLDER_PATH, file));
 };
 
+const getSyntaxFiles = async (): Promise<string[]> => {
+  const absoluteStaticPaths = await recursive(
+    join(ROOT_FOLDER_PATH, "syntaxes")
+  );
+  return absoluteStaticPaths.map((file) => relative(ROOT_FOLDER_PATH, file));
+};
+
 test("Correct files are packaged", async () => {
-  const [actual, distFiles, staticFiles, languageFiles] = await Promise.all([
+  const [
+    actual,
+    distFiles,
+    staticFiles,
+    languageFiles,
+    syntaxFiles,
+  ] = await Promise.all([
     listFiles({ packageManager: PackageManager.Npm }),
     getDistFiles(),
     getStaticFiles(),
     getLanguageFiles(),
+    getSyntaxFiles(),
   ]);
 
   const expected = [
@@ -50,6 +64,7 @@ test("Correct files are packaged", async () => {
     ...distFiles,
     ...staticFiles,
     ...languageFiles,
+    ...syntaxFiles,
   ];
 
   checkArray(expected, actual);

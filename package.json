@@ -150,6 +150,13 @@
         ],
         "configuration": "./languages/codeowners.language-configuration.json"
       }
+    ],
+    "grammars": [
+      {
+        "language": "codeowners",
+        "scopeName": "text.codeowners",
+        "path": "./syntaxes/codeowners.tmLanguage.json"
+      }
     ]
   },
   "scripts": {

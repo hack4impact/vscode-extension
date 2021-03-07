@@ -130,6 +130,7 @@ test("Contains contributes", () => {
   expect(Array.isArray(contributes.commands)).toBe(true);
   expect(Array.isArray(contributes.keybindings)).toBe(true);
   expect(Array.isArray(contributes.languages)).toBe(true);
+  expect(Array.isArray(contributes.grammars)).toBe(true);
 
   const config = contributes.configuration;
 
