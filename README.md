@@ -23,6 +23,8 @@
   - [Create GitIgnore Template](#create-gitignore-template)
   - [Create Changelog Template](#create-changelog-template)
   - [Create License Template](#create-license-template)
+- [Configuration](#configuration)
+  - [Keybindings](#keybindings)
 - [Contributors](#contributors)
 
 ## Installation
@@ -74,6 +76,12 @@
 
 </details>
 
+#### Keybinding
+
+- **Mac**: `cmd+h t`
+
+- **Windows/Linux**: `ctrl+h t`
+
 ---
 
 ### Create ESLint Configuration Template
@@ -95,6 +103,12 @@
 <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-eslint-config-template.gif" alt="Create ESLint Configuration Template Demo">
 
 </details>
+
+#### Keybinding
+
+- **Mac**: `cmd+h e`
+
+- **Windows/Linux**: `ctrl+h e`
 
 ---
 
@@ -118,6 +132,12 @@
 
 </details>
 
+#### Keybinding
+
+- **Mac**: `cmd+h p`
+
+- **Windows/Linux**: `ctrl+h p`
+
 ---
 
 ### Create MarkdownLint Configuration Template
@@ -139,6 +159,12 @@
 <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-markdownlint-config-template.gif" alt="Create MarkdownLint Configuration Template Demo">
 
 </details>
+
+#### Keybinding
+
+- **Mac**: `cmd+h m`
+
+- **Windows/Linux**: `ctrl+h m`
 
 ---
 
@@ -162,6 +188,12 @@
 
 </details>
 
+#### Keybinding
+
+- **Mac**: `cmd+h d`
+
+- **Windows/Linux**: `ctrl+h d`
+
 ---
 
 ### Create GitIgnore Template
@@ -183,6 +215,12 @@
 <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-gitignore-template.gif" alt="Create GitIgnore Template Demo">
 
 </details>
+
+#### Keybinding
+
+- **Mac**: `cmd+h g`
+
+- **Windows/Linux**: `ctrl+h g`
 
 ---
 
@@ -206,6 +244,12 @@
 
 </details>
 
+#### Keybinding
+
+- **Mac**: `cmd+h c`
+
+- **Windows/Linux**: `ctrl+h c`
+
 ---
 
 ### Create License Template
@@ -227,6 +271,23 @@
 <img src="https://raw.githubusercontent.com/hack4impact/vscode-extension/main/static/demos/create-license-template.gif" alt="Create License Template Demo">
 
 </details>
+
+#### Keybinding
+
+- **Mac**: `cmd+h l`
+
+- **Windows/Linux**: `ctrl+h l`
+
+## Configuration
+
+### Keybindings
+
+#### Disable All
+
+- **Description**: Controls whether all keybindings are disabled
+- **Key**: `hack4impact.recommendations.keybindings.disableAll`
+- **Type**: `boolean`
+- **Default**: `false`
 
 ## Contributors
 
