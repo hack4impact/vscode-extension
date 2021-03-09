@@ -26,8 +26,9 @@
   - [Create CodeOwners Template](#create-codeowners-template)
 - [Configuration](#configuration)
   - [Keybindings](#keybindings)
-- [Extras!](#extras)
-  - [CODEOWNERS File Support](#codeowners-file-support)
+- [Language Support](#language-support)
+  - [`CODEOWNERS` File Support](#codeowners-file-support)
+  - [`Robots.txt` File Support](#robotstxt-file-support)
 - [Contributors](#contributors)
 
 ## Installation
@@ -320,21 +321,31 @@
 - **Type**: `boolean`
 - **Default**: `false`
 
-## Extras!
+## Language Support
 
-### CODEOWNERS File Support
+### `CODEOWNERS` File Support
 
-#### What is a CODEOWNERS file?
+#### What is a `CODEOWNERS` file?
 
 [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners):
 
-> You can use a CODEOWNERS file to define individuals or teams that are responsible for code in a repository.
+> You can use a `CODEOWNERS` file to define individuals or teams that are responsible for code in a repository.
 
-[Sample CODEOWNERS file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)
+[Sample `CODEOWNERS` file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)
 
 #### What does Hack4Impact provide?
 
-VS Code currently does not have syntax highlighting and language configuration for CODEOWNERS files. This extension provides both (sourced from [Jason Nutter's extension](https://github.com/jasonnutter/vscode-codeowners))!
+VS Code currently does not have syntax highlighting and language configuration for `CODEOWNERS` files. This extension provides both (sourced from [Jason Nutter's extension](https://github.com/jasonnutter/vscode-codeowners))!
+
+### `Robots.txt` File Support
+
+[Google Search Central](https://developers.google.com/search/docs/advanced/robots/intro):
+
+> A `robots.txt` file tells search engine crawlers which pages or files the crawler can or can't request from your site.
+
+#### What does Hack4Impact provide?
+
+VS Code currently does not have syntax highlighting and language configuration for `robots.txt` files. This extension provides both (sourced from [Nixinova's repo](https://github.com/Nixinova/tmLanguage))!
 
 ## Contributors
 
