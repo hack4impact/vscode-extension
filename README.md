@@ -334,7 +334,7 @@
 
 #### What does Hack4Impact provide?
 
-VS Code currently does not have syntax highlighting and language configuration for CODEOWNERS files. This extension provides both!
+VS Code currently does not have syntax highlighting and language configuration for CODEOWNERS files. This extension provides both (sourced from [Jason Nutter's extension](https://github.com/jasonnutter/vscode-codeowners))!
 
 ## Contributors
 

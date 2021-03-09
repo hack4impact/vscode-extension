@@ -1,5 +1,7 @@
 {
   "name": "codeowners",
+  "scopeName": "text.codeowners",
+  "fileTypes": ["CODEOWNERS"],
   "patterns": [
     {
       "include": "#comment"
@@ -34,6 +36,5 @@
       "match": "\\S*@\\S+",
       "name": "storage.type.function.codeowners"
     }
-  },
-  "scopeName": "text.codeowners"
+  }
 }

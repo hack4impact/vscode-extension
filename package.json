@@ -162,6 +162,16 @@
           "codeowners"
         ],
         "configuration": "./languages/codeowners.language-configuration.json"
+      },
+      {
+        "id": "robots.txt",
+        "filenames": [
+          "robots.txt"
+        ],
+        "aliases": [
+          "robots.txt"
+        ],
+        "configuration": "./languages/robots-txt.language-configuration.json"
       }
     ],
     "grammars": [
@@ -169,6 +179,11 @@
         "language": "codeowners",
         "scopeName": "text.codeowners",
         "path": "./syntaxes/codeowners.tmLanguage.json"
+      },
+      {
+        "language": "robots.txt",
+        "scopeName": "text.robots-txt",
+        "path": "./syntaxes/robots-txt.tmLanguage.json"
       }
     ]
   },
