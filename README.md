@@ -333,10 +333,11 @@ If you use JetBrains instead, install the [JetBrains plugin](https://github.com/
 
 This extension provides language support and syntax highlighting for the following:
 
-| Language/File | Docs                                                                                                           | Sample                                                                                         | Source                                                                  |
-| ------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| `CODEOWNERS`  | [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners) | [Sample `CODEOWNERS` file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)   | [Jason Nutter's Repo](https://github.com/jasonnutter/vscode-codeowners) |
-| `robots.txt`  | [Google Search Central](https://developers.google.com/search/docs/advanced/robots/intro)                       | [Sample `robots.txt` file](https://github.com/gitlabhq/gitlabhq/blob/master/public/robots.txt) | [Nixinova's Repo](https://github.com/Nixinova/tmLanguage)               |
+| Language/File | Docs                                                                                                           | Sample                                                                                                   | Source                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `CODEOWNERS`  | [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners) | [Sample `CODEOWNERS` file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)             | [Jason Nutter's Repo](https://github.com/jasonnutter/vscode-codeowners) |
+| `robots.txt`  | [Google Search Central](https://developers.google.com/search/docs/advanced/robots/intro)                       | [Sample `robots.txt` file](https://github.com/gitlabhq/gitlabhq/blob/master/public/robots.txt)           | [Nixinova's Repo](https://github.com/Nixinova/tmLanguage)               |
+| `_redirects`  | [Netlify Docs](https://docs.netlify.com/routing/redirects/)                                                    | [Sample `_redirects` file](https://github.com/netlify/netlify-cms/blob/master/website/static/_redirects) | [Nixinova's Repo](https://github.com/Nixinova/tmLanguage)               |
 
 ## Contributors
 
