@@ -4,11 +4,21 @@
   <br>
   <b><a href="https://hack4impact.org/">Hack4Impact</a>'s VS Code Recommendations</b>
 </h1>
-<p align="center"><a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations"><img src="https://img.shields.io/visual-studio-marketplace/v/hack4impact.h4i-recommendations?style=flat-square&label=Version&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000"alt="Version"></a>&nbsp;<a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations&ssr=false#review-details"><img src="https://img.shields.io/visual-studio-marketplace/r/hack4impact.h4i-recommendations?style=flat-square&label=Rating&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000" alt="Rating"></a>&nbsp;<a href="https://github.com/hack4impact/vscode-extension/actions?query=workflow%3A%22Node+CI%22"><img src="https://img.shields.io/github/workflow/status/hack4impact/vscode-extension/Node%20CI?style=flat-square&label=Build&logo=github&logoColor=FFFFFF&labelColor=000000" alt="Build"/></a>&nbsp;<a href="https://lgtm.com/projects/g/hack4impact/vscode-extension/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/github/hack4impact/vscode-extension?style=flat-square&label=Code%20Quality&logo=lgtm&logoColor=FFFFFF&labelColor=000000" alt="Code Quality"/></a></p>
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations"><img src="https://img.shields.io/visual-studio-marketplace/v/hack4impact.h4i-recommendations?style=flat-square&label=Version&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000"alt="Version"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations&ssr=false#review-details"><img src="https://img.shields.io/visual-studio-marketplace/r/hack4impact.h4i-recommendations?style=flat-square&label=Rating&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000" alt="Rating"></a>
+<a href="https://github.com/hack4impact/vscode-extension/actions?query=workflow%3A%22Node+CI%22"><img src="https://img.shields.io/github/workflow/status/hack4impact/vscode-extension/Node%20CI?style=flat-square&label=Build&logo=github&logoColor=FFFFFF&labelColor=000000" alt="Build"/></a>
+<a href="https://lgtm.com/projects/g/hack4impact/vscode-extension/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/github/hack4impact/vscode-extension?style=flat-square&label=Code%20Quality&logo=lgtm&logoColor=FFFFFF&labelColor=000000" alt="Code Quality"/></a>
+</p>
 
-<p align="center"><a href="https://codecov.io/gh/hack4impact/vscode-extension/"><img src="https://img.shields.io/codecov/c/github/hack4impact/vscode-extension?style=flat-square&label=Coverage&logo=Codecov&logoColor=FFFFFF&labelColor=000000" alt="Coverage"/></a>&nbsp;<a href="https://hack4impact.github.io/vscode-extension/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fhack4impact.github.io%2Fvscode-extension%2F&style=flat-square&label=Coverage%20Website&logo=github&logoColor=FFFFFF&labelColor=000000" alt="Coverage Website"/></a></p>
+<p align="center">
+<a href="https://codecov.io/gh/hack4impact/vscode-extension/"><img src="https://img.shields.io/codecov/c/github/hack4impact/vscode-extension?style=flat-square&label=Coverage&logo=Codecov&logoColor=FFFFFF&labelColor=000000" alt="Coverage"/></a>
+<a href="https://hack4impact.github.io/vscode-extension/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fhack4impact.github.io%2Fvscode-extension%2F&style=flat-square&label=Coverage%20Website&logo=github&logoColor=FFFFFF&labelColor=000000" alt="Coverage Website"/></a>
+</p>
 
-<p align="center">Hack4Impact's VS Code Extension that provides recommended extensions and templates for quality project development</p>
+Hack4Impact's VS Code Extension that provides recommended extensions and templates for quality project development.
+
+If you use JetBrains instead, install the [JetBrains plugin](https://github.com/hack4impact/jetbrains-plugin).
 
 ## Contents <!-- omit in toc -->
 
@@ -27,8 +37,6 @@
 - [Configuration](#configuration)
   - [Keybindings](#keybindings)
 - [Language Support](#language-support)
-  - [`CODEOWNERS` File Support](#codeowners-file-support)
-  - [`Robots.txt` File Support](#robotstxt-file-support)
 - [Contributors](#contributors)
 
 ## Installation
@@ -323,29 +331,12 @@
 
 ## Language Support
 
-### `CODEOWNERS` File Support
+This extension provides language support and syntax highlighting for the following:
 
-#### What is a `CODEOWNERS` file?
-
-[GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners):
-
-> You can use a `CODEOWNERS` file to define individuals or teams that are responsible for code in a repository.
-
-[Sample `CODEOWNERS` file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)
-
-#### What does Hack4Impact provide?
-
-VS Code currently does not have syntax highlighting and language configuration for `CODEOWNERS` files. This extension provides both (sourced from [Jason Nutter's extension](https://github.com/jasonnutter/vscode-codeowners))!
-
-### `Robots.txt` File Support
-
-[Google Search Central](https://developers.google.com/search/docs/advanced/robots/intro):
-
-> A `robots.txt` file tells search engine crawlers which pages or files the crawler can or can't request from your site.
-
-#### What does Hack4Impact provide?
-
-VS Code currently does not have syntax highlighting and language configuration for `robots.txt` files. This extension provides both (sourced from [Nixinova's repo](https://github.com/Nixinova/tmLanguage))!
+| Language/File | Docs                                                                                                           | Sample                                                                                         | Source                                                                  |
+| ------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `CODEOWNERS`  | [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners) | [Sample `CODEOWNERS` file](https://github.com/python/cpython/blob/master/.github/CODEOWNERS)   | [Jason Nutter's Repo](https://github.com/jasonnutter/vscode-codeowners) |
+| `robots.txt`  | [Google Search Central](https://developers.google.com/search/docs/advanced/robots/intro)                       | [Sample `robots.txt` file](https://github.com/gitlabhq/gitlabhq/blob/master/public/robots.txt) | [Nixinova's Repo](https://github.com/Nixinova/tmLanguage)               |
 
 ## Contributors
 
