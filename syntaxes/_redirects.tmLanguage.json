@@ -1,0 +1,103 @@
+{
+  "name": "_redirects",
+  "scopeName": "source.redirects",
+  "fileTypes": ["_redirects"],
+  "patterns": [
+    {
+      "include": "#main"
+    }
+  ],
+  "repository": {
+    "main": {
+      "patterns": [
+        {
+          "include": "#comment"
+        },
+        {
+          "include": "#uri"
+        },
+        {
+          "include": "#query"
+        },
+        {
+          "include": "#number"
+        },
+        {
+          "include": "#code"
+        },
+        {
+          "include": "#punct"
+        },
+        {
+          "include": "#text"
+        }
+      ]
+    },
+    "comment": {
+      "name": "comment.line.hash.redirects",
+      "begin": "#",
+      "end": "$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.comment.redirects"
+        }
+      }
+    },
+    "uri": {
+      "name": "string.unquoted.uri.redirects",
+      "begin": "(?:[a-z]+:)?\\/",
+      "end": "[\\s$]",
+      "patterns": [
+        {
+          "include": "#wildcard"
+        },
+        {
+          "include": "#splat"
+        }
+      ]
+    },
+    "wildcard": {
+      "name": "constant.character.wildcard.redirects",
+      "match": "\\*"
+    },
+    "splat": {
+      "name": "variable.other.splat.redirects",
+      "match": ":\\w+"
+    },
+    "query": {
+      "name": "keyword.other.query-selector.redirects",
+      "match": "[^\\s]+(?==)"
+    },
+    "number": {
+      "match": "(\\d+)(!)?",
+      "captures": {
+        "1": {
+          "name": "constant.numeric.integer.redirects"
+        },
+        "2": {
+          "name": "constant.character.force.redirects"
+        }
+      }
+    },
+    "code": {
+      "name": "string.unquoted.code.redirects",
+      "match": "(?<==)[a-z]{2}(?:-[A-Z]{2})?(?=\\s|$)"
+    },
+    "text": {
+      "name": "string.unquoted.text.redirects",
+      "match": "(?<==)[^\\s]+"
+    },
+    "punct": {
+      "patterns": [
+        {
+          "name": "punctuation.accessor.redirects",
+          "match": ":|="
+        },
+        {
+          "name": "punctuation.separator.redirects",
+          "match": ",(?!\\s)"
+        }
+      ]
+    }
+  }
+}

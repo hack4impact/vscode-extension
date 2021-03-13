@@ -172,6 +172,16 @@
           "robots.txt"
         ],
         "configuration": "./languages/robots-txt.language-configuration.json"
+      },
+      {
+        "id": "_redirects",
+        "filenames": [
+          "_redirects"
+        ],
+        "aliases": [
+          "_redirects"
+        ],
+        "configuration": "./languages/_redirects.language-configuration.json"
       }
     ],
     "grammars": [
@@ -184,6 +194,11 @@
         "language": "robots.txt",
         "scopeName": "text.robots-txt",
         "path": "./syntaxes/robots-txt.tmLanguage.json"
+      },
+      {
+        "language": "_redirects",
+        "scopeName": "source.redirects",
+        "path": "./syntaxes/_redirects.tmLanguage.json"
       }
     ]
   },
