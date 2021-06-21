@@ -16,7 +16,7 @@
 <a href="https://hack4impact.github.io/vscode-extension/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fhack4impact.github.io%2Fvscode-extension%2F&style=flat-square&label=Coverage%20Website&logo=github&logoColor=FFFFFF&labelColor=000000" alt="Coverage Website"/></a>
 </p>
 
-Hack4Impact's VS Code Extension that provides recommended extensions and templates for quality project development.
+VS Code Extension that provides recommended extensions and templates for quality project development.
 
 If you use JetBrains instead, install the [JetBrains plugin](https://github.com/hack4impact/jetbrains-plugin).
 
