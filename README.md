@@ -5,7 +5,8 @@
   <b><a href="https://hack4impact.org/">Hack4Impact</a>'s VS Code Recommendations</b>
 </h1>
 <p align="center">
-<a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations"><img src="https://img.shields.io/visual-studio-marketplace/v/hack4impact.h4i-recommendations?style=flat-square&label=Version&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000"alt="Version"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations"><img src="https://img.shields.io/visual-studio-marketplace/v/hack4impact.h4i-recommendations?style=flat-square&label=Version&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000" alt="Version"></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations"><img src="https://img.shields.io/visual-studio-marketplace/i/hack4impact.h4i-recommendations?logo=visual-studio-code&labelColor=000000&label=Installs&style=flat-square" alt="Installs" ></a>
 <a href="https://marketplace.visualstudio.com/items?itemName=hack4impact.h4i-recommendations&ssr=false#review-details"><img src="https://img.shields.io/visual-studio-marketplace/r/hack4impact.h4i-recommendations?style=flat-square&label=Rating&logo=visual-studio-code&logoColor=FFFFFF&labelColor=000000" alt="Rating"></a>
 <a href="https://github.com/hack4impact/vscode-extension/actions?query=workflow%3A%22Node+CI%22"><img src="https://img.shields.io/github/workflow/status/hack4impact/vscode-extension/Node%20CI?style=flat-square&label=Build&logo=github&logoColor=FFFFFF&labelColor=000000" alt="Build"/></a>
 <a href="https://lgtm.com/projects/g/hack4impact/vscode-extension/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/github/hack4impact/vscode-extension?style=flat-square&label=Code%20Quality&logo=lgtm&logoColor=FFFFFF&labelColor=000000" alt="Code Quality"/></a>
